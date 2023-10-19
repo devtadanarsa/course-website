@@ -2,6 +2,7 @@ import NavbarComponent from "@/components/NavbarComponent"
 import HeroComponent from "@/components/HeroComponent"
 import PurchaseTutorsComponent from "@/components/PurchaseTutorsComponent"
 import BenefitComponent from "@/components/BenefitComponent"
+import SummaryComponent from "@/components/SummaryComponent"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroComponent />
       <PurchaseTutorsComponent />
       <BenefitComponent />
+      <SummaryComponent />
     </div>
   )
 }
