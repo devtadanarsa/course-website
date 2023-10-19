@@ -23,7 +23,7 @@ export default function NavbarComponent(){
                     <p className="font-bold text-inherit">Tutorify</p>
                     </NavbarBrand>
                 </NavbarContent>
-                <NavbarContent justify="end" className="font-semibold">
+                <NavbarContent justify="end" className="font-semibold hidden sm:flex gap-4">
                     {menuItems.map((item, index) => {
                         return(
                             <NavbarItem key={index} className="px-5">
