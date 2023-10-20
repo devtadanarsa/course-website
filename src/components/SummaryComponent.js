@@ -15,7 +15,7 @@ export default function SummaryComponent(){
                         <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
                         <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
                     </AvatarGroup>
-                    <p className="text-14px ml-8">and others</p>
+                    <p className="text-14px ml-8 border-b-2 border-white cursor-pointer">and others</p>
                 </div>
             </div>
             <Button className="bg-white py-8 px-8 text-[#FB9C46] text-[16px] font-semibold z-[9999]">Get your free lessons now</Button>

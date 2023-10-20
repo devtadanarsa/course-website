@@ -69,3 +69,79 @@ export const flagList = [
         path: "images/spain.svg",
     },
 ]
+
+export const teacherList = [
+    {
+        id: 1,
+        title: "English Teachers",
+    },
+    {
+        id: 2,
+        title: "Chinese Teachers",
+    },
+    {
+        id: 3,
+        title: "French Teachers",
+    },
+    {
+        id: 4,
+        title: "Spanish Teachers",
+    },
+    {
+        id: 5,
+        title: "Other Teachers",
+    },
+]
+
+export const lessonList = [
+    {
+        id: 1,
+        title: "Learn English",
+    },
+    {
+        id: 2,
+        title: "Learn Chinese",
+    },
+    {
+        id: 3,
+        title: "Learn French",
+    },
+    {
+        id: 4,
+        title: "Learn Spanish",
+    },
+    {
+        id: 5,
+        title: "Learn More Languages",
+    },
+]
+
+export const companyList = [
+    {
+        id: 1,
+        title: "About",
+    },
+    {
+        id: 2,
+        title: "How it Works",
+    },
+    {
+        id: 3,
+        title: "Term",
+    },
+    {
+        id: 4,
+        title: "Privacy Policy",
+    },
+]
+
+export const moreList = [
+    {
+        id: 1,
+        title: "Documentation",
+    },
+    {
+        id: 2,
+        title: "Licese",
+    },
+]
