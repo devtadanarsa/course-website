@@ -1,9 +1,12 @@
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
+import SignInComponent from "./SignInComponent";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, Checkbox, Input} from "@nextui-org/react";
 import { navLinks } from "@/data/constants";
 import React from "react";
 
-export default function NavbarComponent(){
+export default function NavbarComponent(props){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const {onOpen} = useDisclosure();
 
     const menuItems = [
         "Home",
@@ -13,7 +16,7 @@ export default function NavbarComponent(){
     ];
 
     return(
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 z-[999]">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 px-16">
             <NavbarContent>
                 <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -27,11 +30,12 @@ export default function NavbarComponent(){
                 {navLinks.map((data) => {
                     return(
                         <NavbarItem key={data.id} className="px-5">
-                            <Link href={data.path} className={`${(data.title === "Home") ? "text-[#FF922F] border-b-2 border-[#FF922F]" : "text-black"}`}>{data.title}</Link>
+                            <Link href={data.path} className={`${(data.title === props.page) ? "text-[#FF922F] border-b-2 border-[#FF922F]" : "text-black"}`}>{data.title}</Link>
                         </NavbarItem>
                     )
                 })}
-                <Button className="bg-[#407F55] text-white font-semibold mx-10 px-8">Login</Button>
+                {/* <Button className="bg-[#407F55] text-white font-semibold mx-10 px-8">Login</Button> */}
+                <SignInComponent />
                 <Button className="bg-[#FB9C46] text-white font-semibold px-6">Sign Up</Button>
             </NavbarContent>
             <NavbarMenu>

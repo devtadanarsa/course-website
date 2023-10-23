@@ -5,8 +5,8 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons"
 export default function BenefitComponent(){
     return(
         <div className="flex mt-28 relative">
-            <div className="h-[400px] w-[430px] bg-[#F0D9CA] absolute bottom-0 rounded-2xl"/>
-            <img src="/images/people-benefits-image.svg" className=" z-[99]"/>
+            <div className="h-[400px] w-[430px] bg-[#F0D9CA] absolute bottom-0 rounded-2xl -z-[1]"/>
+            <img src="/images/people-benefits.svg" className="rounded-2xl"/>
             <div className="pl-40">
                 <h1 className="text-[36px] font-semibold text-[#393939]">What Will You <span className="text-[#058E6E]">Get</span> ?</h1>
                 <p className="text-[18px] text-[#6C6C6C] max-w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum dui mollis . Suspendisse nulla :</p>

@@ -18,7 +18,7 @@ export default function SummaryComponent(){
                     <p className="text-14px ml-8 border-b-2 border-white cursor-pointer">and others</p>
                 </div>
             </div>
-            <Button className="bg-white py-8 px-8 text-[#FB9C46] text-[16px] font-semibold z-[9999]">Get your free lessons now</Button>
+            <Button className="bg-white py-8 px-8 text-[#FB9C46] text-[16px] font-semibold z-[9]">Get your free lessons now</Button>
             <img src="/images/circles-line.svg" className="absolute right-10"/>
         </div>
     )

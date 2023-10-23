@@ -8,8 +8,8 @@ import FooterComponent from "@/components/FooterComponent"
 export default function Home() {
   return (
     <>
+      <NavbarComponent page="Home"/>
       <div className="px-24">
-        <NavbarComponent />
         <HeroComponent />
         <PurchaseTutorsComponent />
         <BenefitComponent />

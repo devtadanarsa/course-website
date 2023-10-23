@@ -17,7 +17,7 @@ export const navLinks = [
     {
         id: 2,
         title: "About Us",
-        path: "/about-us"
+        path: "/about"
     },
 ]
 
@@ -143,5 +143,53 @@ export const moreList = [
     {
         id: 2,
         title: "Licese",
+    },
+]
+
+export const visiMisi = [
+    {
+        id: 1,
+        topic: "Visi Tutorify",
+        title: "Sejuta digital talent Untuk Indonesia",
+        text: "Visi kami adalah untuk menghasilkan sejuta digital talent untuk Indonesia melalui pendidikan vokasi digital",
+    },
+    {
+        id: 2,
+        topic: "Misi Tutorify",
+        title: '"To train, certify, and connect youth to jobs"',
+        text: "Itulah misi kami. Dengan proses pembelajaran yang menarik dan efektif, siapapun dapat belajar digital skills, mendapatkan sertifikasi, dan tentunya siap kerja!"
+    }   
+]
+
+export const kenapaTutorify = [
+    {
+        id: 1,
+        title: "Kurikulum Berdasarkan Kebutuhan Industri",
+        text: "Hemat waktu dan biaya! Kurikulum Skilvul dibuat agar lebih mudah dimengerti dan sesuai dengan kebutuhan industri. Hampir 50% peserta berasal dari background non-IT dan 90% lulusan berhasil mendapatkan pekerjaan setelahnya."
+    },
+    {
+        id: 2,
+        title: "Personalisasi Proses Pembelajaran",
+        text: "Dengan adanya SkilPath, kamu bebas memilih spesialisasi yang diinginkan agar dapat disesuaikan dengan kebutuhan industri saat ini."
+    },
+    {
+        id: 3,
+        title: 'Metode "Blended-Learning"',
+        text: 'Proses pembelajaran menggunakan metode "blended-learning" yaitu secara online dan offline. Kamu dapat mengikuti kelas online dan sekaligus bertanya langsung kepada para mentor. Metode ini akan lebih efektif karena proses mengajar dua arah.',
+    },
+    {
+        id: 4,
+        title: 'Sertifikasi',
+        text: 'Kamu akan mendapatkan SkilBadge setiap kali berhasil menyelesaikan sebuah kelas. SkilBadge tersebut dapat digunakan sebagai sertifikasi pada saat job hunting lho!.',
+    },
+    {
+        id: 5,
+        title: 'Penilaian "Auto-grading"',
+        text: 'Kamu akan langsung mendapatkan feedback pada saat proses pembelajaran tanpa harus menunggu jawaban atau tanggapan dari mentor.',
+    },
+    {
+        id: 6,
+        title: 'Siap Kerja',
+        text: 'Terhubung dengan lebih dari 150+ hiring partners, kamu akan mempunyai kesempatan untuk mendapatkan pekerjaan setelah lulus dari program kami. Tunggu apa lagi? Yuk mulai belajar!.',
     },
 ]
