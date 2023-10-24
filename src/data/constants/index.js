@@ -164,31 +164,37 @@ export const visiMisi = [
 export const kenapaTutorify = [
     {
         id: 1,
+        image: "/images/book-icon.svg",
         title: "Kurikulum Berdasarkan Kebutuhan Industri",
         text: "Hemat waktu dan biaya! Kurikulum Skilvul dibuat agar lebih mudah dimengerti dan sesuai dengan kebutuhan industri. Hampir 50% peserta berasal dari background non-IT dan 90% lulusan berhasil mendapatkan pekerjaan setelahnya."
     },
     {
         id: 2,
+        image: "/images/why-learn-personalization.svg",
         title: "Personalisasi Proses Pembelajaran",
         text: "Dengan adanya SkilPath, kamu bebas memilih spesialisasi yang diinginkan agar dapat disesuaikan dengan kebutuhan industri saat ini."
     },
     {
         id: 3,
+        image: "/images/why-learn-blended-learning.svg",
         title: 'Metode "Blended-Learning"',
         text: 'Proses pembelajaran menggunakan metode "blended-learning" yaitu secara online dan offline. Kamu dapat mengikuti kelas online dan sekaligus bertanya langsung kepada para mentor. Metode ini akan lebih efektif karena proses mengajar dua arah.',
     },
     {
         id: 4,
+        image: "/images/why-learn-certification.svg",
         title: 'Sertifikasi',
         text: 'Kamu akan mendapatkan SkilBadge setiap kali berhasil menyelesaikan sebuah kelas. SkilBadge tersebut dapat digunakan sebagai sertifikasi pada saat job hunting lho!.',
     },
     {
         id: 5,
+        image: "/images/why-learn-autograding.svg",
         title: 'Penilaian "Auto-grading"',
         text: 'Kamu akan langsung mendapatkan feedback pada saat proses pembelajaran tanpa harus menunggu jawaban atau tanggapan dari mentor.',
     },
     {
         id: 6,
+        image: "/images/why-learn-network.svg",
         title: 'Siap Kerja',
         text: 'Terhubung dengan lebih dari 150+ hiring partners, kamu akan mempunyai kesempatan untuk mendapatkan pekerjaan setelah lulus dari program kami. Tunggu apa lagi? Yuk mulai belajar!.',
     },

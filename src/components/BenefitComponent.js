@@ -13,8 +13,7 @@ export default function BenefitComponent(){
                 <div className="h-[400px] w-[500px] bg-gradient-to-b from-black-to-transparent absolute"/>
                 {benefitList.map((data) => {
                     return(
-                        <div key={data.id} className="flex px-4 py-4 mt-7 bg-white shadow-green-100 shadow-md">
-                        {/* <div key={data.id} className="flex px-4 py-4 mt-7 z-[9999] relative"> */}
+                        <div key={data.id} className="flex px-4 py-4 mt-7 bg-white shadow-green-100 shadow-2xl">
                             <div className="bg-[#058E6E] px-2 py-1 h-fit w-fit rounded-md">
                                 <FontAwesomeIcon icon={faCheck} style={{color: "#ffffff",}} />
                             </div>
