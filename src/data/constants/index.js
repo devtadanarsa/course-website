@@ -145,3 +145,24 @@ export const moreList = [
     title: "Licese",
   },
 ];
+
+export const tutors = [
+  {
+    id: 1,
+    name: "Tude Prayatna",
+    social: "prayatnaaa",
+    desc: "I am the best teacher in the world right now!",
+    price: "Rp1.000.000",
+    rating: "5.0",
+    personality: "I am kind, loving, and have a girlfriend named Ayu Aprilia",
+  },
+  {
+    id: 2,
+    name: "Devta Danarsa",
+    social: "devtadandarsa",
+    desc: "I am lame compare to Tude :(",
+    price: "Rp50.0000",
+    rating: "3.0",
+    personality: "I am grumpy",
+  },
+];
