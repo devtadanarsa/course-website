@@ -7,3 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.custom-accordion-item .nui-accordion-title-text {
+    color: white; /* Change to the color you desire */
+  }

@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <NavbarComponent page="Home"/>
-      <div className="px-24">
-        <HeroComponent />
+      <div className="px-8 md:px-24">
+        <HeroComponent/>
         <PurchaseTutorsComponent />
         <BenefitComponent />
         <SummaryComponent />

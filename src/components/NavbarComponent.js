@@ -16,7 +16,7 @@ export default function NavbarComponent(props){
     ];
 
     return(
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 px-16">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 px-16" data-aos="fade-down" data-aos-duration="1000">
             <NavbarContent>
                 <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -42,14 +42,12 @@ export default function NavbarComponent(props){
                 {navLinks.map((data) => (
                 <NavbarMenuItem key={`${data.title}-${data.id}`}>
                     <Link
-                    color={
-                        data.id === 2 ? "primary" : data.id === menuItems.length - 1 ? "danger" : "foreground"
-                    }
-                    className="w-full"
-                    href="#"
-                    size="lg"
+                        color={data.id === 2 ? "primary" : data.id === menuItems.length - 1 ? "danger" : "foreground"}
+                        className="w-full"
+                        href="#"
+                        size="lg"
                     >
-                    {data.title}
+                        {data.title}
                     </Link>
                 </NavbarMenuItem>
                 ))}

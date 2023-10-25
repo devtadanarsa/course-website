@@ -199,3 +199,124 @@ export const kenapaTutorify = [
         text: 'Terhubung dengan lebih dari 150+ hiring partners, kamu akan mempunyai kesempatan untuk mendapatkan pekerjaan setelah lulus dari program kami. Tunggu apa lagi? Yuk mulai belajar!.',
     },
 ]
+
+export const pemrogramanKotlinCourse = [
+    {
+        id: 1,
+        title: "Persiapan Belajar",
+        content: [
+            {
+                id: 1,
+                title: "Persetujuan Hak Cipta",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+            },
+            {
+                id: 2,
+                title: "Mekanisme Belajar",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+            },
+            {
+                id: 3,
+                title: "Forum Diskusi",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+            },
+            {
+                id: 4,
+                title: "Glosarium",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+            },
+            {
+                id: 5,
+                title: "Daftar Referensi",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+            },
+        ]
+    },
+    {
+        id: 2,
+        title: "Pendahuluan",
+        content: [
+            {
+                id: 1,
+                title: "Pengenalan Kotlin",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 2,
+                title: "Kotlin Sebagai Bahasa Multiparadigm",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 3,
+                title: "Kotlin Sebagai Bahasa Multiplatform",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 4,
+                title: "Kotlin Untuk Aplikasi Server-Side",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 5,
+                title: "Kotlin Untuk Aplikasi Android",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 6,
+                title: "Kotlin Sebagai Investasi",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 7,
+                title: "Kotlin Sebagai Bahasa Safe, Statically Typed",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+        ]
+    },
+    {
+        id: 3,
+        title: "Persiapan Membangun dan Menjalankan Program Kotlin",
+        content: [
+            {
+                id: 1,
+                title: "Membangun dan Menjalankan Program Kotlin",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",   
+            },
+            {
+                id: 2,
+                title: "Instalasi OpenJDK (Linux dan macOS)",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",   
+            },
+            {
+                id: 3,
+                title: "Instalasi OpenJDK (Windows)",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",   
+            },
+            {
+                id: 4,
+                title: "Instalasi Gradle (Linux dan macOS)",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 5,
+                title: "Instalasi IntelliJ IDEA",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 6,
+                title: "Program Pertama Kotlin",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 7,
+                title: "Membuat Program Dengan IntelliJ IDEA",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+            {
+                id: 8,
+                title: "Rangkuman",
+                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+            },
+        ]
+    },
+]
