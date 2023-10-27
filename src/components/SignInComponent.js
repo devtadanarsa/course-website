@@ -1,5 +1,4 @@
 import React from "react";
-// import { Button } from "@nextui-org/react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link} from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +11,7 @@ export default function SignInComponent(){
 
     return(
         <>
-            <Button onPress={onOpen} className="bg-[#407F55] text-white font-semibold mx-10 px-8">Login</Button>
+            <Button onPress={onOpen} className="bg-[#407F55] text-white font-semibold mx-10 px-8 hover:scale-110">Login</Button>
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center" backdrop="blur">
                 <ModalContent>
                 {(onClose) => (

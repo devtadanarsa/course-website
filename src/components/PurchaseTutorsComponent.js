@@ -9,8 +9,8 @@ export default function PurchaseTutorsComponent(){
                 <h1 className="text-[36px] font-semibold max-w-[600px] mt-24">Purchase Your Awesome Lessons and Find Your Tutors </h1>
                 <p className="text-[18px] text-[#6C6C6C] max-w-[600px] mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.</p>
                 <div className="flex text-[16px] mt-10">
-                    <Button className="bg-[#FB9C46] text-white px-5 py-6 mr-5">Book Your Lessons</Button>
-                    <Button className="bg-transparent border-2 border-[#FB9C46] text-[#FB9C46] font-semibold py-6">Find Your Tutors</Button>
+                    <Button className="bg-[#FB9C46] text-white px-5 py-6 mr-5 hover:scale-110 transition-transform">Book Your Lessons</Button>
+                    <Button className="bg-transparent border-2 border-[#FB9C46] text-[#FB9C46] font-semibold py-6 hover:scale-110 transition-transform">Find Your Tutors</Button>
                 </div>
             </div>
             <div data-aos="fade-left">
