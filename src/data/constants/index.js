@@ -256,4 +256,76 @@ export const lessonCard = [
       { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
     ],
   },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Belajar React",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
+  },
 ];

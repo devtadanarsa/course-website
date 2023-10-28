@@ -11,10 +11,10 @@ import ModalButtonComponent from "./ModalButtonComponent";
 
 export default function LessonCardComponent() {
   return (
-    <div className="px-24 py-12">
+    <div className="px-24 py-12 grid grid-flow-row-dense grid-cols-3 grid-rows-3 ">
       {lessonCard.map((data) => {
         return (
-          <Card className="w-[350px]">
+          <Card className="w-[350px] mb-[20px]">
             <CardHeader>
               <div className="w-[350px] flex justify-center">
                 <iframe src={data.link} allowFullScreen />
@@ -22,9 +22,7 @@ export default function LessonCardComponent() {
             </CardHeader>
             <CardBody className="p-[10px]">
               <div className="flex place-content-between">
-                <h1 className="text-[20px] font-bold">Lessons</h1>
                 <div>
-                  <p className="font-semibold text-small">This is</p>
                   <h1 className="text-[20px] font-bold">{data.title}</h1>
                 </div>
               </div>

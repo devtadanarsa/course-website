@@ -12,11 +12,13 @@ import { lessonCard } from "@/data/constants";
 
 export default function ModalButtonComponent() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  // const data = lessonCard.find((data) => data.id === id);
+  const getIndexById = (id) => {
+    return lessonCard.findIndex((lesson) => lesson.id === id);
+  };
 
   return (
     <>
-      <Button onPress={onOpen} className="mt-[5px]">
+      <Button keys={getIndexById} onPress={onOpen} className="mt-[5px]">
         Tutor Contact
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
@@ -27,15 +29,9 @@ export default function ModalButtonComponent() {
             </ModalHeader>
             <ModalBody>
               <p className="font-bold text-small">Tude Prayatna</p>
-              <p>prayatnaaa</p>
-              <p>
-                Magna exercitation reprehenderit magna aute tempor cupidatat
-                consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
-                incididunt cillum quis. Velit duis sit officia eiusmod Lorem
-                aliqua enim laboris do dolor eiusmod. Et mollit incididunt nisi
-                consectetur esse laborum eiusmod pariatur proident Lorem eiusmod
-                et. Culpa deserunt nostrud ad veniam.
-              </p>
+              <p>{lessonCard[0].tutorContact[0].name}</p>
+              <p>{lessonCard[0].tutorContact[0].instagram}</p>
+              <p>{lessonCard[0].tutorContact[0].address}</p>
             </ModalBody>
             <ModalFooter></ModalFooter>
           </>
