@@ -9,17 +9,17 @@ import {
 } from "@nextui-org/react";
 import { tutors } from "@/data/constants";
 import { Link } from "@nextui-org/react";
+import { BookButtonComponent } from "./BookButtonComponent";
 
 export default function App() {
-  const [isFollowed, setIsFollowed] = React.useState(false);
   return (
-    <div className="flex gap-3 px-24">
+    <div className="flex gap-3 px-24 py-8">
       {tutors.map((data) => {
         return (
           <Card
-            className="max-w-[340px]"
+            className="max-w-[340px] max-h-[180px]"
             isPressable
-            onPress={() => <Link href=""></Link>}
+            key={data.id}
           >
             <CardHeader className="justify-between">
               <div className="flex gap-5">
@@ -40,36 +40,25 @@ export default function App() {
                 </div>
               </div>
             </CardHeader>
-            <CardBody className="px-3 py-0 text-small text-black">
-              <p>
-                {data.desc}{" "}
-                <span className="text-small text-default-400">
-                  {data.personality}
-                </span>
-              </p>
-            </CardBody>
-            <CardFooter className="gap-3">
-              <div className="flex gap-1">
+            <Link href="/tutorprofile" target="_blank">
+              <CardBody className="px-3 py-0 text-small text-black">
+                <p>
+                  {data.desc}{" "}
+                  <span className="text-small text-default-400">
+                    {data.personality}
+                  </span>
+                </p>
+              </CardBody>
+            </Link>
+            <CardFooter>
+              <div className="justify">
                 <p className=" text-default-400 text-small">
                   <span className="font-semibold text-black">{data.price}</span>
                   /Hour
                 </p>
               </div>
-              <div className="flex gap-1 justify-end pl-[110px]">
-                <Button
-                  className={
-                    isFollowed
-                      ? "bg-transparent text-foreground border-default-200"
-                      : ""
-                  }
-                  color="primary"
-                  radius="full"
-                  size="sm"
-                  variant={isFollowed ? "bordered" : "solid"}
-                  onPress={() => setIsFollowed(!isFollowed)}
-                >
-                  {isFollowed ? "Booked" : "Book"}
-                </Button>
+              <div className="flex gap-3 justify-end w-[340px]">
+                {/* <BookButtonComponent /> */}
               </div>
             </CardFooter>
           </Card>
