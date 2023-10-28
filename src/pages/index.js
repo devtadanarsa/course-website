@@ -1,8 +1,11 @@
-import NavbarComponent from "@/components/NavbarComponent"
+import NavbarComponent from "@/components/NavbarComponent";
+import TutorListComponent from "@/components/TutorListComponent";
 
 export default function Home() {
   return (
-    <NavbarComponent />
-  
-  )
+    <div className="px-[24]">
+      <NavbarComponent />
+      <TutorListComponent />
+    </div>
+  );
 }
