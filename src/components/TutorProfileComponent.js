@@ -1,41 +1,51 @@
 import { tutors } from "@/data/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card, CardBody, CardHeader, CardFooter } from "@nextui-org/react";
-import {
-  NavbarContent,
-  Navbar,
-  NavbarBrand,
-  NavbarItem,
-} from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Button } from "@nextui-org/react";
+import { NavbarContent, Navbar } from "@nextui-org/react";
 import { Avatar } from "@nextui-org/react";
 import { Tab, Tabs } from "@nextui-org/react";
 import { Code } from "@nextui-org/react";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { Tooltip } from "@nextui-org/react";
-import Image from "next/image";
+import LessonCardComponent from "./LessonCardComponent";
 
 export default function TutorProfileComponent() {
   const star = <FontAwesomeIcon icon={faStar} />;
 
-  const tutorSchedule = () => {
-    <p>hi</p>;
-  };
   return (
-    <div className="px-24 p-[30px]">
+    <div className="px-24 p-[25px]">
       <Tooltip
         placement="right"
         content={
-          <div>
-            <Image
-              source={{
-                uri: "https://reactnative.dev/img/tiny_logo.png",
-              }}
-            />
-            <h1>tude pra</h1>
-          </div>
+          <Card className="w-[350px]">
+            <CardHeader>
+              <div className="w-[350px] flex justify-center">
+                <iframe
+                  src="https://www.youtube.com/embed/ZIR6hUgrv_U"
+                  allowFullScreen
+                />
+              </div>
+            </CardHeader>
+            <CardBody className="p-[10px]">
+              <div className="flex place-content-between">
+                <h1 className="text-[20px] font-bold">Lessons</h1>
+                <div>
+                  <p className="font-semibold">This is</p>
+                  <h1 className="text-[20px] font-bold">Sex Education</h1>
+                </div>
+              </div>
+              <Button
+                color="warning"
+                className="text-white font-semibold mt-[10px]"
+              >
+                Book Lesson
+              </Button>
+              <Button className="font-semibold mt-[10px]">Tutor Contact</Button>
+            </CardBody>
+          </Card>
         }
       >
-        <Card className="w-[1000px] h-[600px]">
+        <Card className="w-[1000px] h-[400px]">
           <CardHeader className="px-10 pt-10">
             <div className="flex gap-5"></div>
             <Avatar
@@ -45,7 +55,7 @@ export default function TutorProfileComponent() {
               src="/avatars/avatar-1.png"
             />
             <div className="pl-[10px]">
-              <h1 className="font-bold text-[20px]">Tude Prayatna</h1>
+              <h1 className="font-bold text-[20px]">{tutors[0].name}</h1>
               <h3 className="text-[12px] font-semibold tracking-tight text-default-400">
                 PROFESIONAL PROF
               </h3>
@@ -75,11 +85,10 @@ export default function TutorProfileComponent() {
                             <Code className="text-[12px] gap-2">Pussy</Code>
                           </div>
                           <p className="font-sans">
-                            Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
+                            I have taught over 23,300 English lessons online. I
+                            have also taught English as a second language at the
+                            Russian-Armenian University and the American
+                            University of Armenia.
                           </p>
                         </CardBody>
                       </Card>
@@ -87,26 +96,79 @@ export default function TutorProfileComponent() {
                     <Tab key="teach" title="Me as a Teacher">
                       <Card>
                         <CardBody className="h-[200px]">
-                          Ut enim ad minim veniam, quis nostrud exercitation
-                          ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat. Duis aute irure dolor in reprehenderit in
-                          voluptate velit esse cillum dolore eu fugiat nulla
-                          pariatur. I'm patient and supportive. I do know that
-                          mistakes are part of the process and I offer a humane
-                          approach. I like to have a friendly relationship with
-                          my students as long as there's mutual respect. Je suis
-                          patiente et vous encourage dans vos efforts. Je sais
-                          que les erreurs font partie de l'apprentissage et vous
-                          propose une approche humaine dans un cadre détendu.
+                          Usap air matamu Yang menetes di pipimu Ku pastikan
+                          semuanya Akan baik-baik saja Bila kau terus pandangi
+                          Langit tinggi di angkasa oh Tak kan ada habisnya Sgala
+                          hasrat di dunia Hawa tercipta di dunia Untuk menemani
+                          sang Adam Begitu juga dirimu Tercipta tuk temani aku
+                          Renungkan sejenak Arti hadirku di sini Jangan pernah
+                          ingkari Dirimu adalah wanita Harusnya dirimu menjadi
+                          Perhiasan sangkar maduku oh Walaupun kadang diriku
+                          Bertekuk lutut di hadapanmu Hawa tercipta di dunia
+                          Untuk menemani sang Adam Begitu juga dirimu Tercipta
+                          tuk temani aku Harusnya dirimu menjadi Perhiasan
+                          sangkar maduku oh Walaupun kadang diriku Bertekuk
+                          lutut di hadapanmu Hawa tercipta di dunia Untuk
+                          menemani sang Adam Begitu juga dirimu Tercipta tuk
+                          temani aku Hawa tercipta di dunia (Hawa tercipta di
+                          dunia) Untuk menemani sang Adam (menemani sang Adam)
+                          Begitu juga dirimu (begitu juga dirimu) Tercipta tuk
+                          temani aku Hawa tercipta di dunia (Hawa tercipta di
+                          dunia) Untuk menemani sang Adam (menemani sang Adam)
+                          Begitu juga dirimu (begitu juga dirimu) Tercipta tuk
+                          temani aku (menemani aku) Bukalah pintu jiwamu Dengar
+                          bisikan sanubari Semua adalah isyarat Isyarat dari
+                          Sang Pencipta
                         </CardBody>
                       </Card>
                     </Tab>
                     <Tab key="myLessons" title="My Lessons">
                       <Card>
                         <CardBody className="h-[200px]">
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum. cjsksjcsjcbsajbcsjkabcbsac. sckskscnnsac
+                          You know you love me (yo), I know you care (uh-huh)
+                          Just shout whenever (yo), and I'll be there (uh-huh)
+                          You are my love (yo), you are my heart (uh-huh) And we
+                          will never, ever, ever be apart (yo, uh-huh) Are we an
+                          item? (Yo) girl, quit playin' (uh-huh) "We're just
+                          friends" (yo), what are you sayin'? (Uh-huh) Said,
+                          "There's another" (yo), and looked right in my eyes
+                          (uh-huh) My first love broke my heart for the first
+                          time, and I was like (yo, uh-huh) "Baby, baby, baby,
+                          oh" Like, "Baby, baby, baby, no" Like, "Baby, baby,
+                          baby, oh" I thought you'd always be mine, mine "Baby,
+                          baby, baby, oh" Like, "Baby, baby, baby, no" Like,
+                          "Baby, baby, baby, oh" I thought you'd always be mine,
+                          mine Oh, for you, I would've done whatever (uh-huh)
+                          And I just can't believe we ain't together (yo,
+                          uh-huh) And I wanna play it cool (yo), but I'm losin'
+                          you (uh-huh) I'll buy you anything (yo), I'll buy you
+                          any ring (uh-huh) And I'm in pieces (yo), baby, fix me
+                          (uh-huh) And just shake me 'til you wake me from this
+                          bad dream (yo, uh-huh) I'm goin' down (oh), down,
+                          down, down (uh-huh) And I just can't believe, my first
+                          love won't be around, and I'm like "Baby, baby, baby,
+                          oh" Like, "Baby, baby, baby, no" Like, "Baby, baby,
+                          baby, oh" I thought you'd always be mine, mine "Baby,
+                          baby, baby, oh" Like, "Baby, baby, baby, no" Like,
+                          "Baby, baby, baby, oh" I thought you'd always be mine,
+                          mine (Luda!) When I was 13, I had my first love There
+                          was nobody that compared to my baby And nobody came
+                          between us, nor could ever come above She had me goin'
+                          crazy Oh, I was starstruck She woke me up daily Don't
+                          need no Starbucks (woo) She made my heart pound And
+                          skip a beat when I see her in the street and At school
+                          on the playground But I really wanna see her on the
+                          weekend She knows she got me dazin' 'Cause she was so
+                          amazin' And now, my heart is breakin' But I just keep
+                          on sayin' "Baby, baby, baby, oh" Like, "Baby, baby,
+                          baby, no" Like, "Baby, baby, baby, oh" I thought you'd
+                          always be mine, mine "Baby, baby, baby, oh" Like,
+                          "Baby, baby, baby, no" Like, "Baby, baby, baby, oh" I
+                          thought you'd always be mine, mine I'm gone (yeah,
+                          yeah, yeah, yeah, yeah, yeah) Now, I'm all gone (yeah,
+                          yeah, yeah, yeah, yeah, yeah) Now, I'm all gone (yeah,
+                          yeah, yeah, yeah, yeah, yeah) Now, I'm all gone (gone,
+                          gone, gone) I'm gone
                         </CardBody>
                       </Card>
                     </Tab>
@@ -120,23 +182,33 @@ export default function TutorProfileComponent() {
       <div className="mt-[20px]">
         <Card className="w-[1000px]">
           <CardBody className="px-12">
-            <div className="flex justify-center font-bold text-[25px] gap-[120px]">
-              <h1 className="font-bold text-yellow-400">
-                {star}
-                {tutors[0].rating}
-              </h1>
-              <h1>545</h1>
-              <h1>4,431</h1>
-              <h1>100%</h1>
-              <h1>99%</h1>
+            <div className="flex justify-center gap-[120px] font-bold">
+              <div>
+                <h1 className="flex justify-center font-bold text-yellow-400">
+                  {star}
+                  {tutors[0].rating}
+                </h1>
+                <p className="text-[#808080]">Rating</p>
+              </div>
+              <div>
+                <h1 className="flex justify-center">545</h1>
+                <p className="text-[#808080]">Students</p>
+              </div>
+              <div>
+                <h1 className="flex justify-center">4,431</h1>
+                <p className="text-[#808080]">Lessons</p>
+              </div>
+              <div>
+                <h1 className="flex justify-center">100%</h1>
+                <p className="text-[#808080]">Attendance</p>
+              </div>
+              <div>
+                <h1 className="flex justify-center">99%</h1>
+                <p className="text-[#808080]">Response</p>
+              </div>
             </div>
-            <div className="flex justify-center font-semibold text-[15px] text-[#808080] gap-[110px]">
-              <p>Rating</p>
-              <p>Students</p>
-              <p>Lessons</p>
-              <p>Attendance</p>
-              <p>Response</p>
-            </div>
+            {/* <div className="flex justify-center font-semibold text-[15px] text-[#808080] gap-[110px]"> */}
+            {/* </div> */}
           </CardBody>
         </Card>
       </div>

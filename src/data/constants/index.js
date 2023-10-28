@@ -160,9 +160,100 @@ export const tutors = [
     id: 2,
     name: "Devta Danarsa",
     social: "devtadandarsa",
-    desc: "I am lame compare to Tude :(",
+    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
     price: "Rp50.0000",
     rating: "3.0",
-    personality: "I am grumpy",
+    personality: "I am grumpy, i always hungry and want to have sex everytime",
+  },
+];
+
+export const courseList = [
+  {
+    id: 1,
+    title: "Belajar React",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Python.",
+    level: "Pemula",
+  },
+  {
+    id: 2,
+    title: "Belajar C",
+    time: "44 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman C.",
+    level: "Pemula",
+  },
+  {
+    id: 3,
+    title: "Belajar Dewasa",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Hidup.",
+    level: "Pemula",
+  },
+  {
+    id: 4,
+    title: "Belajar Mengenai Hidup",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Dewasa.",
+    level: "Biasa",
+  },
+  {
+    id: 5,
+    title: "Belajar Tutorify",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Tutorify.",
+    level: "Pemula",
+  },
+  {
+    id: 6,
+    title: "Belajar Menghargai Sesama",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman.",
+    level: "Pemula",
+  },
+  {
+    id: 7,
+    title: "Belajar PHP",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Javascript.",
+    level: "Pemula",
+  },
+  {
+    id: 8,
+    title: "Belajar Laravel",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Javascript.",
+    level: "Expert",
+  },
+  {
+    id: 9,
+    title: "Belajar Percintaan",
+    time: "24 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa cita.",
+    level: "Master",
+  },
+  {
+    id: 10,
+    title: "Belajar API",
+    time: "12 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan API.",
+    level: "Expert",
+  },
+  {
+    id: 11,
+    title: "Belajar Ngoding",
+    time: "18 jam",
+    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman.",
+    level: "Pemula",
+  },
+];
+
+export const lessonCard = [
+  {
+    id: 1,
+    title: "Sex Education",
+    link: "https://www.youtube.com/embed/ZIR6hUgrv_U",
+    tutorContact: [
+      { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
+    ],
   },
 ];
