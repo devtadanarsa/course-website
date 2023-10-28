@@ -6,7 +6,7 @@ import { moreList } from "@/data/constants"
 export default function FooterComponent(){
     return(
         <div className="bg-[#F2BF62] text-white">
-            <div className="flex justify-between pl-28 pr-48 px-24 mt-20 pt-24">
+            <div className="hidden md:flex justify-between pl-28 pr-48 px-24 mt-20 pt-24">
                 <div className="text-[16px]">
                     <h1 className="font-semibold">Tutorify</h1>
                     <p className="max-w-[170px] mt-6">Learn more than just a language</p>

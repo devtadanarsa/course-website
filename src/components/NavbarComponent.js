@@ -11,25 +11,18 @@ export default function NavbarComponent(props){
     const {onOpen} = useDisclosure();
     const [activePage, setActivePage] = useState(props.page);
 
-    const menuItems = [
-        "Home",
-        "Lessons",
-        "Find Tutors",
-        "About Us",
-    ];
-
     return(
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 px-16">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 xl:px-16">
             <NavbarContent>
                 <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                className="sm:hidden"
+                className="xl:hidden"
                 />
                 <NavbarBrand>
                 <p className="font-bold text-inherit">Tutorify</p>
                 </NavbarBrand>
             </NavbarContent>
-            <NavbarContent justify="end" className="font-semibold hidden sm:flex gap-4">
+            <NavbarContent justify="end" className="font-semibold hidden xl:flex gap-4">
                 {navLinks.map((data) => {
                     return(
                         <NavbarItem key={data.id} className="px-5 hover:scale-110 transition-transform">
@@ -46,16 +39,11 @@ export default function NavbarComponent(props){
             </NavbarContent>
             <NavbarMenu>
                 {navLinks.map((data) => (
-                <NavbarMenuItem key={`${data.title}-${data.id}`}>
-                    <Link
-                        color={data.id === 2 ? "primary" : data.id === menuItems.length - 1 ? "danger" : "foreground"}
-                        className="w-full"
-                        href="#"
-                        size="lg"
-                    >
-                        {data.title}
-                    </Link>
-                </NavbarMenuItem>
+                    <NavbarMenuItem key={data.id}>
+                        <Link className="mt-4 flex justify-center" href={data.path}>
+                            {data.title}
+                        </Link>
+                    </NavbarMenuItem>
                 ))}
             </NavbarMenu>
         </Navbar>

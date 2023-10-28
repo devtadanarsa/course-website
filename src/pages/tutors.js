@@ -6,7 +6,7 @@ export default function Tutors(){
     return(
         <>
             <NavbarComponent page="Find Tutors" />
-            <div className="px-24">
+            <div className="px-10 md:px-24">
                 <SearchComponent />
             </div>
             <FooterComponent />

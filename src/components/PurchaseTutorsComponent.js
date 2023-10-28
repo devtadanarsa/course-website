@@ -4,7 +4,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function PurchaseTutorsComponent(){
     return (
-        <div className="flex justify-between mt-32 relative">
+        <div className="block justify-between mt-32 relative xl:flex">
             <div data-aos="fade-right">
                 <h1 className="text-[36px] font-semibold max-w-[600px] mt-24">Purchase Your Awesome Lessons and Find Your Tutors </h1>
                 <p className="text-[18px] text-[#6C6C6C] max-w-[600px] mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.</p>
@@ -14,15 +14,15 @@ export default function PurchaseTutorsComponent(){
                 </div>
             </div>
             <div data-aos="fade-left">
-                <div className="border-4 rounded-full border-[#FB9C46] px-5 py-5 mr-12" >
+                <div className="border-4 rounded-full border-[#FB9C46] px-5 py-5 mr-12 hidden xl:block">
                     <div className="bg-[#F0D9CA] rounded-full pr-24 overflow-hidden">
-                        <img src="images/tutors-image.svg"/>
+                        <img src="images/tutors-image.svg" className="w-full h-full object-cover"/>
                     </div>
                 </div>
-                <div className="rounded-full h-[80px] w-[80px] border-4 border-white absolute right-[90px] top-[20px]">
+                <div className="rounded-full h-[80px] w-[80px] border-4 border-white absolute right-[90px] top-[20px] hidden xl:block">
                     <img src="/images/china.svg"/>
                 </div>
-                <div className="bg-white w-fit px-10 py-5 absolute top-16 right-[450px] shadow-2xl shadow-orange-500 rounded-2xl">
+                <div className="bg-white w-fit px-10 py-5 absolute top-16 right-[450px] shadow-2xl shadow-orange-500 rounded-2xl hidden xl:block">
                     <div className="flex justify-center">
                         <FontAwesomeIcon icon={faHeart} beat style={{color: "#fb9c46",}}/>
                     </div>
