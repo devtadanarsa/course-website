@@ -8,17 +8,17 @@ export default function AcademiesNavbarComponent(){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return(
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 border-[#FB9C46] px-16 text-[#FB9C46]">
+        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-4 border-black px-16">
             <NavbarContent>
                 <NavbarBrand className="cursor-pointer">
                     <FontAwesomeIcon icon={faArrowLeft} style={{color: "#FB9C46",}} />
-                    <Link className="font-bold text-inherit ml-6" href="/">Memulai Pemrograman dengan Kotlin</Link>
+                    <Link className="font-bold text-inherit ml-6 text-[#FB9C46]" href="/lessons/1">Memulai Pemrograman dengan Kotlin</Link>
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent justify="end" className="font-semibold hidden sm:flex gap-4">
-                <div className="flex items-center border-2 border-[#FB9C46] pl-5 rounded-2xl">
-                    <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#FB9C46",}} />
-                    <input className="rounded-2xl pl-3 py-2 focus:outline-none placeholder-[#FB9C46] font-regular" placeholder="Search"/>
+                <div className="flex items-center border-2 pl-5 rounded-2xl">
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <input className="rounded-2xl pl-3 py-2 focus:outline-none font-regular" placeholder="Search"/>
                 </div>
             </NavbarContent>
         </Navbar>

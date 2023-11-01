@@ -8,9 +8,19 @@ import { Code } from "@nextui-org/react";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { Tooltip } from "@nextui-org/react";
 import LessonCardComponent from "./LessonCardComponent";
+import { useEffect, useState } from "react";
 
-export default function TutorProfileComponent() {
+export default function TutorProfileComponent(props) {
   const star = <FontAwesomeIcon icon={faStar} />;
+  const [selectedKeys, setSelectedKeys] = useState([]);
+
+  useEffect(() => {
+    if (props.pathID !== null && typeof props.pathID !== 'undefined') {
+        setSelectedKeys([props.pathID.toString()]);
+      }
+  }, [props.pathID]);
+
+  console.log(props.pathID);
 
   return (
     <div className="px-24 p-[25px]">
@@ -55,7 +65,7 @@ export default function TutorProfileComponent() {
               src="/avatars/avatar-1.png"
             />
             <div className="pl-[10px]">
-              <h1 className="font-bold text-[20px]">{tutors[0].name}</h1>
+              <h1 className="font-bold text-[20px]">{props.name}</h1>
               <h3 className="text-[12px] font-semibold tracking-tight text-default-400">
                 PROFESIONAL PROF
               </h3>
@@ -71,7 +81,7 @@ export default function TutorProfileComponent() {
                         <CardBody className="h-[200px]">
                           <h5 className="text-[10px]">From Bali</h5>
                           <h4 className="text-[12px] mb-[10px]">
-                            Live in Denpasar, Sesetan
+                            {props.address}
                           </h4>
                           <h1 className="font-bold mb-[10px]">
                             Things About Me
@@ -85,10 +95,7 @@ export default function TutorProfileComponent() {
                             <Code className="text-[12px] gap-2">Pussy</Code>
                           </div>
                           <p className="font-sans">
-                            I have taught over 23,300 English lessons online. I
-                            have also taught English as a second language at the
-                            Russian-Armenian University and the American
-                            University of Armenia.
+                            {props.about}
                           </p>
                         </CardBody>
                       </Card>

@@ -6,6 +6,7 @@ import Link from "next/link"
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import { useState, useEffect, React } from "react"
 
+
 export default function TutorialListComponent(props){
     const [selectedKeys, setSelectedKeys] = useState([]);
     useEffect(() => {
@@ -15,8 +16,8 @@ export default function TutorialListComponent(props){
       }, [props.pathID]);
 
     return(
-        <div className="border-l-2 border-[#FB9C46] w-4/12 sticky top-0 max-h-screen overflow-y-auto">
-            <h1 className="flex justify-end font-bold text-[20px] pr-4 mt-6 pb-6 border-b-2 border-[#FB9C46] text-[#FB9C46]">Daftar Modul</h1> 
+        <div className="border-l-2 w-4/12 sticky top-0 max-h-screen overflow-y-auto">
+            <h1 className="flex justify-end font-bold text-[20px] pr-4 mt-6 pb-6 border-b-2">Daftar Modul</h1> 
             <div className="ml-6"></div>
             <Accordion selectedKeys={selectedKeys} onSelectionChange={setSelectedKeys}>
                 {pemrogramanKotlinCourse.map((data) => {
@@ -24,7 +25,7 @@ export default function TutorialListComponent(props){
                         <AccordionItem 
                             key={data.id} 
                             title={
-                                <span className="text-[#FB9C46] font-semibold">{data.title}</span>
+                                <span className="font-semibold">{data.title}</span>
                             }
                         >
                             {data.content.map((value) => {

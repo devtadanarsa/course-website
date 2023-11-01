@@ -9,7 +9,7 @@ export default function BenefitComponent(){
             <img src="/images/people-benefits.svg" className="rounded-2xl hidden xl:block" data-aos="zoom-in"/>
             <div className="xl:pl-40" data-aos="fade-left">
                 <h1 className="text-[36px] font-semibold text-[#393939]">What Will You <span className="text-[#058E6E]">Get</span> ?</h1>
-                <p className="text-[18px] text-[#6C6C6C] max-w-[500px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum dui mollis . Suspendisse nulla :</p>
+                <p className="text-[18px] text-[#6C6C6C] max-w-[500px]">Dive into the world of possibilities and uncover what awaits you.</p>
                 <div className="h-[400px] w-[500px] bg-gradient-to-b from-black-to-transparent absolute"/>
                 {benefitList.map((data) => {
                     return(

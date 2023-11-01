@@ -19,7 +19,7 @@ export default function NavbarComponent(props){
                 className="xl:hidden"
                 />
                 <NavbarBrand>
-                <p className="font-bold text-inherit">Tutorify</p>
+                <p className="font-bold text-inherit">DaCourse</p>
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent justify="end" className="font-semibold hidden xl:flex gap-4">
@@ -32,9 +32,7 @@ export default function NavbarComponent(props){
                         </NavbarItem>
                     )
                 })}
-                {/* <Button className="bg-[#407F55] text-white font-semibold mx-10 px-8">Login</Button> */}
                 <SignInComponent />
-                {/* <Button className="bg-[#FB9C46] text-white font-semibold px-6 hover:scale-110">Sign Up</Button> */}
                 <SignUpComponent />
             </NavbarContent>
             <NavbarMenu>

@@ -17,7 +17,7 @@ export const navLinks = [
   {
     id: 2,
     title: "About Us",
-    path: "/about-us",
+    path: "/about",
   },
 ];
 
@@ -29,7 +29,7 @@ export const benefitList = [
   },
   {
     id: 2,
-    title: "Practice for free with the italki community",
+    title: "Practice for free with the community",
     text: "Develop your language skills by building connections with others...",
   },
   {
@@ -73,19 +73,19 @@ export const flagList = [
 export const teacherList = [
   {
     id: 1,
-    title: "English Teachers",
+    title: "HTML CSS Teachers",
   },
   {
     id: 2,
-    title: "Chinese Teachers",
+    title: "ReactJS Teachers",
   },
   {
     id: 3,
-    title: "French Teachers",
+    title: "Python Teachers",
   },
   {
     id: 4,
-    title: "Spanish Teachers",
+    title: "Java Teachers",
   },
   {
     id: 5,
@@ -96,23 +96,23 @@ export const teacherList = [
 export const lessonList = [
   {
     id: 1,
-    title: "Learn English",
+    title: "Learn HTML",
   },
   {
     id: 2,
-    title: "Learn Chinese",
+    title: "Learn ReactJS",
   },
   {
     id: 3,
-    title: "Learn French",
+    title: "Learn Python",
   },
   {
     id: 4,
-    title: "Learn Spanish",
+    title: "Learn Java",
   },
   {
     id: 5,
-    title: "Learn More Languages",
+    title: "Learn Other Tools",
   },
 ];
 
@@ -149,13 +149,13 @@ export const moreList = [
 export const visiMisi = [
     {
         id: 1,
-        topic: "Visi Tutorify",
+        topic: "Visi DaCourse",
         title: "Sejuta digital talent Untuk Indonesia",
         text: "Visi kami adalah untuk menghasilkan sejuta digital talent untuk Indonesia melalui pendidikan vokasi digital",
     },
     {
         id: 2,
-        topic: "Misi Tutorify",
+        topic: "Misi DaCourse",
         title: '"To train, certify, and connect youth to jobs"',
         text: "Itulah misi kami. Dengan proses pembelajaran yang menarik dan efektif, siapapun dapat belajar digital skills, mendapatkan sertifikasi, dan tentunya siap kerja!"
     }   
@@ -330,6 +330,58 @@ export const tutors = [
     price: "Rp1.000.000",
     rating: "5.0",
     personality: "I am kind, loving, and have a girlfriend named Ayu Aprilia",
+    address: "Live in Denpasar, Sesetan",
+    about: "I have taught over 23,300 English lessons online. I have also taught English as a second language at the Russian-Armenian University and the American University of Armenia.",
+    lessonsList: [
+      {
+        id: 1,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 2,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 3,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 4,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 5,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 6,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+    ]
   },
   {
     id: 2,
@@ -339,86 +391,105 @@ export const tutors = [
     price: "Rp50.0000",
     rating: "3.0",
     personality: "I am grumpy, i always hungry and want to have sex everytime",
+    address: "Live in Los Angeles, California",
+    about: "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+    lessonList: [
+      {
+        id: 1,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 2,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 3,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 4,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 5,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 6,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+    ]
   },
 ];
 
 export const courseList = [
   {
     id: 1,
-    title: "Belajar React",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Python.",
-    level: "Pemula",
+    title: "Memulai Pemrograman Kotlin",
+    time: "50",
+    rating: "4.84",
+    difficulty: "Pemula",
+    description: "Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.",
+    module: "118",
+    total: "55.422",
+    image: "/images/kotlin-course.jpg",
   },
   {
     id: 2,
-    title: "Belajar C",
-    time: "44 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman C.",
-    level: "Pemula",
+    title: "Belajar Analisis Data dengan Python",
+    time: "30",
+    rating: "4.84",
+    difficulty: "Pemula",
+    description: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Python",
+    module: "61",
+    total: "20.854",
+    image: "/images/analisis-data-course.jpg",
   },
   {
     id: 3,
-    title: "Belajar Dewasa",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Hidup.",
-    level: "Pemula",
+    title: "Belajar Dasar Manajemen Proyek",
+    time: "11",
+    rating: "4.87",
+    difficulty: "Dasar",
+    description: "Mempelajari dasar manajemen proyek, siklus dan metodologi manajemen, hingga mengejar karir manajemen proyek.",
+    module: "38",
+    total: "14.117",
+    image: "/images/manajemen-proyek-course.png",
   },
   {
     id: 4,
-    title: "Belajar Mengenai Hidup",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Dewasa.",
-    level: "Biasa",
-  },
-  {
-    id: 5,
-    title: "Belajar Tutorify",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Tutorify.",
-    level: "Pemula",
-  },
-  {
-    id: 6,
-    title: "Belajar Menghargai Sesama",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman.",
-    level: "Pemula",
-  },
-  {
-    id: 7,
-    title: "Belajar PHP",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Javascript.",
-    level: "Pemula",
-  },
-  {
-    id: 8,
-    title: "Belajar Laravel",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Javascript.",
-    level: "Expert",
-  },
-  {
-    id: 9,
-    title: "Belajar Percintaan",
-    time: "24 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa cita.",
-    level: "Master",
-  },
-  {
-    id: 10,
-    title: "Belajar API",
-    time: "12 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan API.",
-    level: "Expert",
-  },
-  {
-    id: 11,
-    title: "Belajar Ngoding",
-    time: "18 jam",
-    desc: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman.",
-    level: "Pemula",
+    title: "Memulai Pemrograman Kotlin",
+    time: "50",
+    rating: "4.84",
+    difficulty: "Pemula",
+    description: "Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.",
+    module: "118",
+    total: "55.422",
+    image: "/images/kotlin-course.jpg",
   },
 ];
 
@@ -502,5 +573,56 @@ export const lessonCard = [
     tutorContact: [
       { name: "Tude Prayatna", instagram: "prayatnaaa", address: "Bali" },
     ],
+  },
+];
+
+export const lessonTable = [
+  {
+    id: 1,
+    title: "Legal English",
+    price: "Rp120.000",
+    description:
+      "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+    language: "English",
+  },
+  {
+    id: 2,
+    title: "Legal English",
+    price: "Rp120.000",
+    description:
+      "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+    language: "English",
+  },
+  {
+    id: 3,
+    title: "Legal English",
+    price: "Rp120.000",
+    description:
+      "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+    language: "English",
+  },
+  {
+    id: 4,
+    title: "Legal English",
+    price: "Rp120.000",
+    description:
+      "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+    language: "English",
+  },
+  {
+    id: 5,
+    title: "Legal English",
+    price: "Rp120.000",
+    description:
+      "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+    language: "English",
+  },
+  {
+    id: 6,
+    title: "Legal English",
+    price: "Rp120.000",
+    description:
+      "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+    language: "English",
   },
 ];

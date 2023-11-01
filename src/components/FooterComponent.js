@@ -44,7 +44,8 @@ export default function FooterComponent(){
                     })}
                 </div>
             </div>
-            <p className="text-[16px] font-bold flex justify-center mt-32 pb-20">Copyright 2023. Created with love</p>
+            <p className="text-[16px] font-bold flex justify-center mt-32">Copyright &copy; 2023. Created with love</p>
+            <p className="text-[16px] font-bold flex justify-center mt-4 pb-20">by Devta and Tude Prayatna</p>
         </div>
     )
 }

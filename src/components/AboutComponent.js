@@ -6,9 +6,9 @@ export default function AboutComponent(){
         <div>
             <div className="flex justify-between items-center bg-[#090D19] text-white py-24 lg:py-0">
                 <div className="px-10 lg:pl-24">
-                    <h2 className="text-[#FB9C46]">Tentang Tutorify</h2>
-                    <h1 className="text-[36px] font-semibold mt-2">Apa sih Tutorify itu?</h1>
-                    <p className="max-w-[500px] mt-5">Tutorify adalah sebuah platform pendidikan teknologi yang menyediakan konten pelajaran digital skills dengan metode “blended-learning” dalam bentuk online maupun offline.</p>
+                    <h2 className="text-[#FB9C46]">Tentang DaCourse</h2>
+                    <h1 className="text-[36px] font-semibold mt-2">Apa sih DaCourse itu?</h1>
+                    <p className="max-w-[500px] mt-5">DaCourse adalah sebuah platform pendidikan teknologi yang menyediakan konten pelajaran digital skills dengan metode “blended-learning” dalam bentuk online maupun offline.</p>
                 </div>
                 <img src="/images/dinosaurus.png" className="h-[450px] pr-24 hidden lg:block"/>
             </div>
@@ -23,7 +23,7 @@ export default function AboutComponent(){
                     )
                 })}
             </div>
-            <h1 className="flex justify-center font-bold text-[36px] mt-24">Kenapa Tutorify</h1>
+            <h1 className="flex justify-center font-bold text-[36px] mt-24">Kenapa DaCourse</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center mx-6 lg:mx-24 mt-16">
                 {kenapaTutorify.map((data) => {
                     return (

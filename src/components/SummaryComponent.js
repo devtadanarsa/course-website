@@ -1,4 +1,5 @@
 import {Avatar, AvatarGroup, Button} from "@nextui-org/react";
+import Link from "next/link";
 
 export default function SummaryComponent(){
     return(
@@ -18,7 +19,9 @@ export default function SummaryComponent(){
                     <p className="text-14px ml-8 border-b-2 border-white cursor-pointer">and others</p>
                 </div>
             </div>
-            <Button className="bg-white py-8 px-8 text-[#FB9C46] text-[16px] font-semibold z-[9] hover:scale-105 transition-transform mt-8 lg:mt-0">Get your free lessons now</Button>
+            <Link href="/lessons">
+                <Button className="bg-white py-8 px-8 text-[#FB9C46] text-[16px] font-semibold z-[9] hover:scale-105 transition-transform mt-8 lg:mt-0">Get your free lessons now</Button>
+            </Link>
             <img src="/images/circles-line.svg" className="absolute right-10 hidden lg:block"/>
         </div>
     )
