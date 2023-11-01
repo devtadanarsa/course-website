@@ -5,8 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { CardBody, Button, ScrollShadow, Textarea } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 
-export default function CourseDetailComponent() {
+export default function CourseDetailComponent(props) {
+  const [selectKeys, setSelectkeys] = useState([]);
+
+  useEffect(() => {
+    if (props.pathID !== null && typeof props.pathID !== "undefined") {
+      setSelectkeys([props.pathID.toString()]);
+    }
+  }, [props.pathID]);
+
+  console.log(props.pathID);
+
   const labelList = [
     "Sertifikat",
     "Pengalaman",
@@ -22,6 +33,7 @@ export default function CourseDetailComponent() {
   ];
   return (
     <div className="">
+      <p>{props.pathID}</p>
       <div className="px-24 py-10">
         <Card>
           <CardBody className="flex gap-5 px-24 py-10 h-fit">
@@ -31,7 +43,7 @@ export default function CourseDetailComponent() {
                   <FontAwesomeIcon icon={faStar} /> 5.0
                 </h5>
                 <h1 className="font-bold text-[30px] mb-[10px] font-poppins">
-                  Belajar Analisis Data dengan React
+                  {props.title}
                 </h1>
                 <h5 className="text-[20px] font-poppins font-semibold">
                   Teknologi:{" "}
@@ -54,7 +66,7 @@ export default function CourseDetailComponent() {
                       content={
                         <div>
                           <h1 className="font-bold">Level Pemula</h1>
-                          <p>Mempelajari mengenai topik dasar dan lain-lain</p>
+                          <p>{props.desc}</p>
                         </div>
                       }
                       closeDelay={1000}
@@ -74,9 +86,7 @@ export default function CourseDetailComponent() {
                   </div>
                 </div>
                 <h1 className="w-[650px] mt-[20px] text-small text-[#808080]">
-                  Pelajari berbagai konsep dasar analisis data beserta
-                  tahapannya, dilengkapi pembahasan studi kasus menggunakan
-                  bahasa pemrograman Python.
+                  {props.desc}
                 </h1>
               </div>
               <div className="ml-[40px]">
