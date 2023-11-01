@@ -27,39 +27,26 @@ export default function TutorDetail(){
                         return(
                             <>
                                 <TutorProfileComponent name={data.name} address={data.address} about={data.about} key={data.id}/>
-                                {data.lessonList?.map((value) => {
-                                    return(
-                                        <div key={value.id} className="mx-24">
-                                            <LessonsTableComponent
-                                                title={value.title}
-                                                description={value.description}
-                                                price={value.price}
-                                                language={value.language}
-                                                
-                                            />
-                                        </div>
-                                    )
-                                })}
+                                <Card className="w-fit mx-24">
+                                    <CardBody>
+                                        {data.lessonsList.map((value) => {
+                                            return(
+                                                <LessonsTableComponent
+                                                    title={value.title}
+                                                    description={value.description}
+                                                    price={value.price}
+                                                    language={value.language}
+                                                    key={value.id}
+                                                />
+                                            )
+                                        })}
+                                    </CardBody>
+                                </Card>
                             </>
                         )
                     }
                     return null;
                 })}
-                <Card className="w-fit mx-24">
-                    <CardBody>
-                    {lessonTable.map((data) => {
-                        return (
-                        <LessonsTableComponent
-                            title={data.title}
-                            description={data.description}
-                            price={data.price}
-                            language={data.language}
-                            key={data.id}
-                        />
-                        );
-                    })}
-                    </CardBody>
-                </Card>
             <FooterComponent />
         </>
         
