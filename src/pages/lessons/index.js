@@ -1,6 +1,6 @@
 import NavbarComponent from "@/components/NavbarComponent"
 import FooterComponent from "@/components/FooterComponent"
-import { CourseComponent } from "@/components/CourseComponent"
+import { CourseComponent } from "@/components/course-components/CourseComponent"
 import SearchComponent from "@/components/SearchComponent"
 import { courseList } from "@/data/constants"
 import { useState } from "react"

@@ -31,7 +31,7 @@ export default function TutorProfileComponent(props) {
             <CardHeader>
               <div className="w-[350px] flex justify-center">
                 <iframe
-                  src="https://www.youtube.com/embed/ZIR6hUgrv_U"
+                  src="https://www.youtube.com/embed/bMknfKXIFA8"
                   allowFullScreen
                 />
               </div>
@@ -41,7 +41,7 @@ export default function TutorProfileComponent(props) {
                 <h1 className="text-[20px] font-bold">Lessons</h1>
                 <div>
                   <p className="font-semibold">This is</p>
-                  <h1 className="text-[20px] font-bold">Sex Education</h1>
+                  <h1 className="text-[20px] font-bold">React Course</h1>
                 </div>
               </div>
               <Button

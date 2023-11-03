@@ -18,21 +18,6 @@ export default function Tutors(){
             <div className="px-10 md:px-24">
                 <SearchComponent name="Tutors" onSearchInputChange={handleSearchInputChange}/>
                 <div className="grid grid-cols-3 gap-8 mx-5">
-                    {/* {tutors.map((data) => {
-                        return(
-                            <TutorListComponent name={data.name} social={data.social} key={data.id} personality={data.personality} price={data.price} desc={data.desc} id={data.id}/>
-                        )
-                    })}
-                    {tutors.map((data) => {
-                        return(
-                            <TutorListComponent name={data.name} social={data.social} key={data.id} personality={data.personality} price={data.price} desc={data.desc} id={data.id}/>
-                        )
-                    })}
-                    {tutors.map((data) => {
-                        return(
-                            <TutorListComponent name={data.name} social={data.social} key={data.id} personality={data.personality} price={data.price} desc={data.desc} id={data.id}/>
-                        )
-                    })} */}
                     {
                         tutors.map((data) => {
                             if(data.name.toLowerCase().includes(searchInput.toLowerCase())){

@@ -3,11 +3,8 @@ import {
   CardBody,
   CardHeader,
   Button,
-  ModalBody,
 } from "@nextui-org/react";
 import { lessonCard } from "@/data/constants";
-import { Modal, ModalContent } from "@nextui-org/react";
-import ModalButtonComponent from "./ModalButtonComponent";
 
 export default function LessonCardComponent() {
   return (
@@ -32,7 +29,6 @@ export default function LessonCardComponent() {
               >
                 Book Lesson
               </Button>
-              <ModalButtonComponent />
             </CardBody>
           </Card>
         );

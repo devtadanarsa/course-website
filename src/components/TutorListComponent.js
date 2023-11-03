@@ -8,13 +8,12 @@ import {
   Button,
 } from "@nextui-org/react";
 import { Link } from "@nextui-org/react";
-import { BookButtonComponent } from "./BookButtonComponent";
 
 export default function TutorlListComponent(props) {
   return (
-    <div className="flex gap-3 py-8">
+    <div className="flex gap-3 py-8 hover:scale-110 transition-transform">
           <Card
-            className="max-w-[340px] max-h-[180px] h-[500px]"
+            className="max-w-[340px] max-h-[180px]"
             isPressable
           >
             <CardHeader className="justify-between">
@@ -54,7 +53,6 @@ export default function TutorlListComponent(props) {
                 </p>
               </div>
               <div className="flex gap-3 justify-end w-[340px]">
-                {/* <BookButtonComponent /> */}
               </div>
             </CardFooter>
           </Card>
