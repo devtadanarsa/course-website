@@ -201,318 +201,339 @@ export const kenapaTutorify = [
 ]
 
 
+// export const tutors = [
+//   {
+//     id: 1,
+//     name: "Tude Prayatna",
+//     social: "prayatnaaa",
+//     desc: "I am the best teacher in the world right now!",
+//     price: "Rp1.000.000",
+//     rating: "5.0",
+//     personality: "I am kind, loving, and have a girlfriend named Ayu Aprilia",
+//     address: "Live in Denpasar, Sesetan",
+//     about:
+//       "I have taught over 23,300 English lessons online. I have also taught English as a second language at the Russian-Armenian University and the American University of Armenia.",
+//     lessonsList: [
+//       {
+//         id: 1,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 2,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 3,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 4,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 5,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 6,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "Devta Danarsa",
+//     social: "devtadandarsa",
+//     desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+//     price: "Rp50.0000",
+//     rating: "3.0",
+//     personality: "I am grumpy, i always hungry and want to have sex everytime",
+//     address: "Live in Los Angeles, California",
+//     about:
+//       "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+//     lessonList: [
+//       {
+//         id: 1,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 2,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 3,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 4,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 5,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 6,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//     ],
+//   },
+//   {
+//     id: 3,
+//     name: "Devta Danarsa",
+//     social: "devtadandarsa",
+//     desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+//     price: "Rp50.0000",
+//     rating: "3.0",
+//     personality: "I am grumpy, i always hungry and want to have sex everytime",
+//     address: "Live in Los Angeles, California",
+//     about:
+//       "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+//     lessonList: [
+//       {
+//         id: 1,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 2,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 3,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 4,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 5,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 6,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//     ],
+//   },
+//   {
+//     id: 4,
+//     name: "Bayu Madura",
+//     social: "devtadandarsa",
+//     desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+//     price: "Rp50.0000",
+//     rating: "3.0",
+//     personality: "I am grumpy, i always hungry and want to have sex everytime",
+//     address: "Live in Los Angeles, California",
+//     about:
+//       "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+//     lessonList: [
+//       {
+//         id: 1,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 2,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 3,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 4,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 5,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 6,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//     ],
+//   },
+//   {
+//     id: 5,
+//     name: "Liangga Ristiana",
+//     social: "devtadandarsa",
+//     desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+//     price: "Rp50.0000",
+//     rating: "3.0",
+//     personality: "I am grumpy, i always hungry and want to have sex everytime",
+//     address: "Live in Los Angeles, California",
+//     about:
+//       "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+//     lessonList: [
+//       {
+//         id: 1,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 2,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 3,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 4,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 5,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//       {
+//         id: 6,
+//         title: "Legal English",
+//         price: "Rp120.000",
+//         description:
+//           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+//         language: "English",
+//       },
+//     ],
+//   },
+// ];
+
 export const tutors = [
   {
     id: 1,
-    name: "Tude Prayatna",
-    social: "prayatnaaa",
-    desc: "I am the best teacher in the world right now!",
-    price: "Rp1.000.000",
-    rating: "5.0",
-    personality: "I am kind, loving, and have a girlfriend named Ayu Aprilia",
-    address: "Live in Denpasar, Sesetan",
-    about:
-      "I have taught over 23,300 English lessons online. I have also taught English as a second language at the Russian-Armenian University and the American University of Armenia.",
-    lessonsList: [
-      {
-        id: 1,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 2,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 3,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 4,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 5,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 6,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-    ],
+    name: "Nicholas Greg",
+    degree: "Computer Science",
+    language: "English",
+    miniDesc: "Hi, my name is Nick and my interests are travel; especially in Africa and Asia and in sports.",
+    extraDesc: "I have a real passion for rugby, both playing and coaching, and in science and nature. I have lived in Africa, Eastern Europe, and Australia and really enjoy meeting new people from all over the world.",
+    video: "https://www.youtube.com/embed/V1xt7zgnuK0?si=X-wg7VzqPoorK8FH"
   },
   {
     id: 2,
-    name: "Devta Danarsa",
-    social: "devtadandarsa",
-    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
-    price: "Rp50.0000",
-    rating: "3.0",
-    personality: "I am grumpy, i always hungry and want to have sex everytime",
-    address: "Live in Los Angeles, California",
-    about:
-      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
-    lessonList: [
-      {
-        id: 1,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 2,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 3,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 4,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 5,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 6,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Devta Danarsa",
-    social: "devtadandarsa",
-    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
-    price: "Rp50.0000",
-    rating: "3.0",
-    personality: "I am grumpy, i always hungry and want to have sex everytime",
-    address: "Live in Los Angeles, California",
-    about:
-      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
-    lessonList: [
-      {
-        id: 1,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 2,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 3,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 4,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 5,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 6,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Bayu Madura",
-    social: "devtadandarsa",
-    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
-    price: "Rp50.0000",
-    rating: "3.0",
-    personality: "I am grumpy, i always hungry and want to have sex everytime",
-    address: "Live in Los Angeles, California",
-    about:
-      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
-    lessonList: [
-      {
-        id: 1,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 2,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 3,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 4,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 5,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 6,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "Liangga Ristiana",
-    social: "devtadandarsa",
-    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
-    price: "Rp50.0000",
-    rating: "3.0",
-    personality: "I am grumpy, i always hungry and want to have sex everytime",
-    address: "Live in Los Angeles, California",
-    about:
-      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
-    lessonList: [
-      {
-        id: 1,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 2,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 3,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 4,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 5,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 6,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-    ],
-  },
-];
+    name: "Nicholas Greg",
+    degree: "Computer Science",
+    language: "English",
+    miniDesc: "Hi, my name is Nick and my interests are travel; especially in Africa and Asia and in sports.",
+    extraDesc: "I have a real passion for rugby, both playing and coaching, and in science and nature. I have lived in Africa, Eastern Europe, and Australia and really enjoy meeting new people from all over the world.",
+    video: "https://www.youtube.com/embed/V1xt7zgnuK0?si=X-wg7VzqPoorK8FH"
+  }, 
+]
 
 
 export const courseList = [
