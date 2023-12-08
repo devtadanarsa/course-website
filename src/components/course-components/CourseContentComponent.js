@@ -1,5 +1,12 @@
-import { pemrogramanKotlinCourse } from "@/data/constants"
 import { courseList } from "@/data/constants";
+
+/* 
+    This component is used in page : lessons/[...slug].js
+    Used to showing the iframe content of a lesson
+
+    TASK : 
+    FETCH REST API
+*/
 
 export default function CourseContentComponent(props){
     return(

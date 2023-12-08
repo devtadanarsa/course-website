@@ -1,4 +1,4 @@
-import AcademiesNavbarComponent from "@/components/AcademiesNavbarComponent"
+import AcademiesNavbarComponent from "@/components/course-components/AcademiesNavbarComponent"
 import CourseContentComponent from "@/components/course-components/CourseContentComponent";
 import CourseContentListComponent from "@/components/course-components/CourseContentListComponent";
 import { useRouter } from "next/router";

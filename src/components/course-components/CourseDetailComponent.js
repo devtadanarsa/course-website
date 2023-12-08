@@ -9,8 +9,16 @@ import Link from "next/link";
 import { faUserGroup, faMicrochip, faFloppyDisk } from "@fortawesome/free-solid-svg-icons";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
-export default function CourseDetailComponent(props) {
+/*
+  This component is used in page : lessons/[id].js
+  Used to show the detailed course
+*/
 
+export default function CourseDetailComponent(props) {
+  // Formatting number to have dots if the number over thousands (ex : 1.000)
+  const formattedTotal = props.total.toLocaleString('en-US').replace(/,/g, '.');
+
+  // Scrollable content array
   const labelList = [
     {
       id: 1,
@@ -93,7 +101,7 @@ export default function CourseDetailComponent(props) {
                 </div>
                 <div className="flex items-center mt-3">
                   <FontAwesomeIcon icon={faUserGroup} style={{color: "#000000",}} />
-                  <p className="ml-2">{`${props.total} Siswa Terdaftar`}</p>
+                  <p className="ml-2">{`${formattedTotal} Siswa Terdaftar`}</p>
                 </div>
                 <h1 className="w-[650px] mt-[20px] text-black text-[#808080]">
                   {props.description}
@@ -102,7 +110,7 @@ export default function CourseDetailComponent(props) {
               <div className="ml-[40px]">
                 <Card className="w-[300px] h-fit shadow shadow-lg">
                   <CardBody className="p-[30px]">
-                    <Link href="/lessons/1/sublessons/1/path/1">
+                      <Link href={`/lessons/${props.id}/sublessons/1/path/1`}>
                       <Button className="mb-[10px] place-items-streth p-[5px] bg-[#F59E0B] text-white font-semibold rounded-md py-2 hover:scale-105 transition-transform w-full">
                         Belajar Sekarang
                       </Button>

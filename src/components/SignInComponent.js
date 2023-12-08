@@ -11,7 +11,7 @@ export default function SignInComponent(){
 
     return(
         <>
-            <Button onPress={onOpen} className="bg-[#407F55] text-white font-semibold mx-10 px-8 hover:scale-110">Login</Button>
+            <Button onPress={onOpen} className="bg-[#407F55] text-white font-semibold md:mx-4 lg:mx-10 px-8 hover:scale-110">Login</Button>
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center" backdrop="blur">
                 <ModalContent>
                 {(onClose) => (

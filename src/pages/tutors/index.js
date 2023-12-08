@@ -1,7 +1,6 @@
 import NavbarComponent from "@/components/NavbarComponent"
 import FooterComponent from "@/components/FooterComponent"
 import SearchComponent from "@/components/SearchComponent"
-import TutorListComponent from "@/components/TutorListComponent";
 import { tutors } from "@/data/constants";
 import { useState } from "react";
 import TutorComponent from "@/components/tutor-component/TutorComponent";

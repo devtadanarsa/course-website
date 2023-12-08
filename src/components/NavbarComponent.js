@@ -12,20 +12,20 @@ export default function NavbarComponent(props){
     const [activePage, setActivePage] = useState(props.page);
 
     return(
-        <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="full" className="font-poppins pt-6 border-b-2 xl:px-16">
+        <Navbar onMenuOpenChange={setIsMenuOpen} style={{margin: 0, padding: 0}} maxWidth="full" className="font-poppins pt-6 border-b-2 sm:px-8 lg:px-16">
             <NavbarContent>
                 <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                className="xl:hidden"
+                className="sm:hidden"
                 />
                 <NavbarBrand>
-                <p className="font-bold text-inherit">DaCourse</p>
+                <p className="font-bold text-inherit hidden md:block">DaCourse</p>
                 </NavbarBrand>
             </NavbarContent>
-            <NavbarContent justify="end" className="font-semibold hidden xl:flex gap-4">
+            <NavbarContent justify="end" className="font-semibold hidden sm:flex sm:gap-2 lg:gap-4">
                 {navLinks.map((data) => {
                     return(
-                        <NavbarItem key={data.id} className="px-5 hover:scale-110 transition-transform">
+                        <NavbarItem key={data.id} className="pr-2 lg:px-5 hover:scale-110 transition-transform">
                             <Link 
                                 href={data.path} 
                                 className={`${(data.title === props.page) ? "text-[#FF922F] border-b-2 border-[#FF922F]" : "text-black"}`}>{data.title}</Link>

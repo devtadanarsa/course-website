@@ -7,6 +7,14 @@ import { useState, useEffect, React } from "react"
 import { courseList } from "@/data/constants"
 
 
+/* 
+    This component is used in page : lessons/[...slug].js
+    This is a sidebar that show the lesson list
+
+    TASK :
+    FETCH REST API
+*/
+
 export default function CourseContentListComponent(props){
     const [selectedKeys, setSelectedKeys] = useState([]);
     useEffect(() => {
