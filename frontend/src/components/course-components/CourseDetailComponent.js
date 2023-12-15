@@ -110,7 +110,7 @@ export default function CourseDetailComponent(props) {
               <div className="ml-[40px]">
                 <Card className="w-[300px] h-fit shadow shadow-lg">
                   <CardBody className="p-[30px]">
-                      <Link href={`/lessons/${props.id}/sublessons/1/path/1`}>
+                    <Link href={`/lessons/${props.id}/sublessons/1/path/1`}>
                       <Button className="mb-[10px] place-items-streth p-[5px] bg-[#F59E0B] text-white font-semibold rounded-md py-2 hover:scale-105 transition-transform w-full">
                         Belajar Sekarang
                       </Button>

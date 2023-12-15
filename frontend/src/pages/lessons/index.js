@@ -33,9 +33,9 @@ export default function LessonsPage(){
                 <SearchComponent name="Lessons" onSearchInputChange={handleSearchInputChange}/>
                 <div className="grid grid-cols-1 xl:grid-cols-2 mx-8 mt-8 gap-8">
                     {course.map((data) => {
-                        if(data.title.toLowerCase().includes(searchInput.toLowerCase())){
+                        if(data.course_title.toLowerCase().includes(searchInput.toLowerCase())){
                             return(
-                                <CourseComponent key={data.id} id={data.id} title={data.title} time={data.time} rating={data.rating} difficulty={data.difficulty} description={data.description} module={data.total_module} total={data.total_student} image={"/images/kotlin-course.jpg"}/>
+                                <CourseComponent key={data.id} id={data.course_id} title={data.course_title} time={data.total_time} rating={data.rating} difficulty={data.difficulty} description={data.main_description} module={data.total_module} total={data.total_student} image={"/images/kotlin-course.jpg"}/>
                             )
                         }
                         return null;
