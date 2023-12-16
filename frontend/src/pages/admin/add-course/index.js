@@ -55,10 +55,7 @@ export default function AddCourse(){
                 <FormField label="Detailed Description" type="text" placeholder="Detailed Description" name="detailedDescription" onChange={handleChange}/>
                 <FormField label="Estimated Total Time" type="text" placeholder="Estimated Total Time" name="estimatedTotalTime" onChange={handleChange}/>
                 <FormField label="Difficulty" type="select" placeholder="Difficulty" name="difficulty" onChange={handleChange}>
-                    <option>Pemula</option>
-                    <option>Menengah</option>
-                    <option>Mahir</option>
-                    <option>Profesional</option>
+                    
                 </FormField>
                 <Button radius="sm" color="success" className="mt-5 px-6 text-white" startContent={<FontAwesomeIcon icon={faFloppyDisk} style={{color: "#ffffff",}}/>} onClick={handleAddCourse}>Submit</Button>
             </div>

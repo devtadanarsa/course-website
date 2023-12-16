@@ -1,5 +1,6 @@
 const pool = require('../config/database');
 
+// get all course (localhost.8000/lessons)
 const getCourses = (req, res) => {
     const queries = "SELECT * FROM course";
     pool.query(queries, (error, results) => {
@@ -8,6 +9,7 @@ const getCourses = (req, res) => {
     })
 }
 
+// get course by id (localhost.8000/lessons/:id)
 const getCourseById = (req, res) => {
     const id = parseInt(req.params.id);
     const queries = 
@@ -24,6 +26,7 @@ const getCourseById = (req, res) => {
     })
 }
 
+// get course chapter and chapter content (localhost:8000/:courseId/:chapterId)
 const getCourseChapters = (req, res) => {
     const id = parseInt(req.params.courseId);
     const queries = 
@@ -42,6 +45,7 @@ const getCourseChapters = (req, res) => {
     })
 }
 
+// add course (localhost:8000/course)
 const addCourse = (req, res) => {
     const {title, shortDescription, detailedDescription, estimatedTotalTime, difficulty} = req.body;
     const queries = 'INSERT INTO course(course_title, main_description, detailed_description, total_time, difficulty, total_student) VALUES($1, $2, $3, $4, $5, 0)';
@@ -52,12 +56,35 @@ const addCourse = (req, res) => {
     })
 }
 
+// edit course main section (localhost:8000/course/:id)
+const updateCourse = (req, res) => {
+    const id = parseInt(req.params.id);
+    const {title, shortDescription, detailedDescription, estimatedTotalTime, difficulty} = req.body;
+    
+    /* For Website :*/
+    const queries = 'UPDATE course SET course_title=$2, main_description=$3, detailed_description=$4, total_time=$5, difficulty=$6 WHERE course_id=$1';
+    pool.query(queries, [id, title, shortDescription, detailedDescription, estimatedTotalTime, difficulty], (error, results) => {
+        if(error) throw error;
+        res.status(201).send("Course sucessfully updated");
+    })
+
+    
+    /* For Postman :
+        const {course_title, main_description, detailed_description, total_time, difficulty} = req.body;
+        pool.query(queries, [id, course_title, main_description, detailed_description, total_time, difficulty], (error, results) => {
+            if(error) throw error;
+            res.status(201).send("Course sucessfully updated");
+        })
+    */
+}
+
+// remove course (localhost:8000/course/:id)
 const removeCourse = (req, res) => {
     const id = parseInt(req.params.id);
     const queries = `DELETE FROM course WHERE course_id=${id}`;
     pool.query(queries, (error, results) => {
         if(error) throw error;
-        res.status(200).send("Course successfully removed");
+        res.status(201).send("Course successfully removed");
     })
 }
 
@@ -66,5 +93,6 @@ module.exports = {
     getCourseById,
     getCourseChapters,
     addCourse,
+    updateCourse,
     removeCourse
 }

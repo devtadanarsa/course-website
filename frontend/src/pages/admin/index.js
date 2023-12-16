@@ -61,9 +61,11 @@ export default function AdminPage(){
                                 <td className="border px-4">{data.course_title}</td>
                                 <td className="border px-4 w-1/6">
                                     <div className="flex justify-center gap-4">
-                                        <Button color="warning" className="text-white" startContent={<FontAwesomeIcon icon={faPen} style={{color: "#ffffff",}}/>}>
-                                            Edit
-                                        </Button>
+                                        <Link href={`/admin/${data.course_id}`}>
+                                            <Button color="warning" className="text-white" startContent={<FontAwesomeIcon icon={faPen} style={{color: "#ffffff",}}/>}>
+                                                Edit
+                                            </Button>
+                                        </Link>
                                         <Button color="danger" className="text-white" startContent={<FontAwesomeIcon icon={faTrash} style={{color: "#ffffff",}}/>} onClick={() => deleteCourse(data.course_id)}>
                                             Delete
                                         </Button>
