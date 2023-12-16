@@ -1,7 +1,6 @@
 import AcademiesNavbarComponent from "@/components/course-components/AcademiesNavbarComponent"
 import CourseContentComponent from "@/components/course-components/CourseContentComponent";
 import CourseContentListComponent from "@/components/course-components/CourseContentListComponent";
-import FetchTestComponent from "@/components/course-components/FetchTestComponent";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
