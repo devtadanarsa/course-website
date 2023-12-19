@@ -34,8 +34,9 @@ app.get("/dacourse/:id", async (req, res) => {
   const course = await pool.query("SELECT * FROM course WHERE id = $1", [id]);
   res.json(course.rows);
 });
+``;
 
-app.put("/dacourse//:id", async (req, res) => {
+app.put("/dacourse/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const { description } = req.body;
