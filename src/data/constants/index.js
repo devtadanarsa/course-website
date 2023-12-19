@@ -93,7 +93,7 @@ export const teacherList = [
   },
 ];
 
-export const lessonList = [
+export const learnLessons = [
   {
     id: 1,
     title: "Learn HTML",
@@ -147,179 +147,179 @@ export const moreList = [
 ];
 
 export const visiMisi = [
-    {
-        id: 1,
-        topic: "Visi DaCourse",
-        title: "Sejuta digital talent Untuk Indonesia",
-        text: "Visi kami adalah untuk menghasilkan sejuta digital talent untuk Indonesia melalui pendidikan vokasi digital",
-    },
-    {
-        id: 2,
-        topic: "Misi DaCourse",
-        title: '"To train, certify, and connect youth to jobs"',
-        text: "Itulah misi kami. Dengan proses pembelajaran yang menarik dan efektif, siapapun dapat belajar digital skills, mendapatkan sertifikasi, dan tentunya siap kerja!"
-    }   
-]
+  {
+    id: 1,
+    topic: "Visi DaCourse",
+    title: "Sejuta digital talent Untuk Indonesia",
+    text: "Visi kami adalah untuk menghasilkan sejuta digital talent untuk Indonesia melalui pendidikan vokasi digital",
+  },
+  {
+    id: 2,
+    topic: "Misi DaCourse",
+    title: '"To train, certify, and connect youth to jobs"',
+    text: "Itulah misi kami. Dengan proses pembelajaran yang menarik dan efektif, siapapun dapat belajar digital skills, mendapatkan sertifikasi, dan tentunya siap kerja!",
+  },
+];
 
 export const kenapaTutorify = [
-    {
-        id: 1,
-        image: "/images/book-icon.svg",
-        title: "Kurikulum Berdasarkan Kebutuhan Industri",
-        text: "Hemat waktu dan biaya! Kurikulum Skilvul dibuat agar lebih mudah dimengerti dan sesuai dengan kebutuhan industri. Hampir 50% peserta berasal dari background non-IT dan 90% lulusan berhasil mendapatkan pekerjaan setelahnya."
-    },
-    {
-        id: 2,
-        image: "/images/why-learn-personalization.svg",
-        title: "Personalisasi Proses Pembelajaran",
-        text: "Dengan adanya SkilPath, kamu bebas memilih spesialisasi yang diinginkan agar dapat disesuaikan dengan kebutuhan industri saat ini."
-    },
-    {
-        id: 3,
-        image: "/images/why-learn-blended-learning.svg",
-        title: 'Metode "Blended-Learning"',
-        text: 'Proses pembelajaran menggunakan metode "blended-learning" yaitu secara online dan offline. Kamu dapat mengikuti kelas online dan sekaligus bertanya langsung kepada para mentor. Metode ini akan lebih efektif karena proses mengajar dua arah.',
-    },
-    {
-        id: 4,
-        image: "/images/why-learn-certification.svg",
-        title: 'Sertifikasi',
-        text: 'Kamu akan mendapatkan SkilBadge setiap kali berhasil menyelesaikan sebuah kelas. SkilBadge tersebut dapat digunakan sebagai sertifikasi pada saat job hunting lho!.',
-    },
-    {
-        id: 5,
-        image: "/images/why-learn-autograding.svg",
-        title: 'Penilaian "Auto-grading"',
-        text: 'Kamu akan langsung mendapatkan feedback pada saat proses pembelajaran tanpa harus menunggu jawaban atau tanggapan dari mentor.',
-    },
-    {
-        id: 6,
-        image: "/images/why-learn-network.svg",
-        title: 'Siap Kerja',
-        text: 'Terhubung dengan lebih dari 150+ hiring partners, kamu akan mempunyai kesempatan untuk mendapatkan pekerjaan setelah lulus dari program kami. Tunggu apa lagi? Yuk mulai belajar!.',
-    },
-]
+  {
+    id: 1,
+    image: "/images/book-icon.svg",
+    title: "Kurikulum Berdasarkan Kebutuhan Industri",
+    text: "Hemat waktu dan biaya! Kurikulum Skilvul dibuat agar lebih mudah dimengerti dan sesuai dengan kebutuhan industri. Hampir 50% peserta berasal dari background non-IT dan 90% lulusan berhasil mendapatkan pekerjaan setelahnya.",
+  },
+  {
+    id: 2,
+    image: "/images/why-learn-personalization.svg",
+    title: "Personalisasi Proses Pembelajaran",
+    text: "Dengan adanya SkilPath, kamu bebas memilih spesialisasi yang diinginkan agar dapat disesuaikan dengan kebutuhan industri saat ini.",
+  },
+  {
+    id: 3,
+    image: "/images/why-learn-blended-learning.svg",
+    title: 'Metode "Blended-Learning"',
+    text: 'Proses pembelajaran menggunakan metode "blended-learning" yaitu secara online dan offline. Kamu dapat mengikuti kelas online dan sekaligus bertanya langsung kepada para mentor. Metode ini akan lebih efektif karena proses mengajar dua arah.',
+  },
+  {
+    id: 4,
+    image: "/images/why-learn-certification.svg",
+    title: "Sertifikasi",
+    text: "Kamu akan mendapatkan SkilBadge setiap kali berhasil menyelesaikan sebuah kelas. SkilBadge tersebut dapat digunakan sebagai sertifikasi pada saat job hunting lho!.",
+  },
+  {
+    id: 5,
+    image: "/images/why-learn-autograding.svg",
+    title: 'Penilaian "Auto-grading"',
+    text: "Kamu akan langsung mendapatkan feedback pada saat proses pembelajaran tanpa harus menunggu jawaban atau tanggapan dari mentor.",
+  },
+  {
+    id: 6,
+    image: "/images/why-learn-network.svg",
+    title: "Siap Kerja",
+    text: "Terhubung dengan lebih dari 150+ hiring partners, kamu akan mempunyai kesempatan untuk mendapatkan pekerjaan setelah lulus dari program kami. Tunggu apa lagi? Yuk mulai belajar!.",
+  },
+];
 
 export const pemrogramanKotlinCourse = [
-    {
+  {
+    id: 1,
+    title: "Persiapan Belajar",
+    content: [
+      {
         id: 1,
-        title: "Persiapan Belajar",
-        content: [
-            {
-                id: 1,
-                title: "Persetujuan Hak Cipta",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
-            },
-            {
-                id: 2,
-                title: "Mekanisme Belajar",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
-            },
-            {
-                id: 3,
-                title: "Forum Diskusi",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
-            },
-            {
-                id: 4,
-                title: "Glosarium",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
-            },
-            {
-                id: 5,
-                title: "Daftar Referensi",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
-            },
-        ]
-    },
-    {
+        title: "Persetujuan Hak Cipta",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+      },
+      {
         id: 2,
-        title: "Pendahuluan",
-        content: [
-            {
-                id: 1,
-                title: "Pengenalan Kotlin",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 2,
-                title: "Kotlin Sebagai Bahasa Multiparadigm",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 3,
-                title: "Kotlin Sebagai Bahasa Multiplatform",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 4,
-                title: "Kotlin Untuk Aplikasi Server-Side",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 5,
-                title: "Kotlin Untuk Aplikasi Android",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 6,
-                title: "Kotlin Sebagai Investasi",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 7,
-                title: "Kotlin Sebagai Bahasa Safe, Statically Typed",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-        ]
-    },
-    {
+        title: "Mekanisme Belajar",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+      },
+      {
         id: 3,
-        title: "Persiapan Membangun dan Menjalankan Program Kotlin",
-        content: [
-            {
-                id: 1,
-                title: "Membangun dan Menjalankan Program Kotlin",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",   
-            },
-            {
-                id: 2,
-                title: "Instalasi OpenJDK (Linux dan macOS)",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",   
-            },
-            {
-                id: 3,
-                title: "Instalasi OpenJDK (Windows)",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",   
-            },
-            {
-                id: 4,
-                title: "Instalasi Gradle (Linux dan macOS)",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 5,
-                title: "Instalasi IntelliJ IDEA",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 6,
-                title: "Program Pertama Kotlin",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 7,
-                title: "Membuat Program Dengan IntelliJ IDEA",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-            {
-                id: 8,
-                title: "Rangkuman",
-                link: "https://www.youtube.com/embed/Oflbho9ZG2U",
-            },
-        ]
-    },
-]
+        title: "Forum Diskusi",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+      },
+      {
+        id: 4,
+        title: "Glosarium",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+      },
+      {
+        id: 5,
+        title: "Daftar Referensi",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U?start=103",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Pendahuluan",
+    content: [
+      {
+        id: 1,
+        title: "Pengenalan Kotlin",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 2,
+        title: "Kotlin Sebagai Bahasa Multiparadigm",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 3,
+        title: "Kotlin Sebagai Bahasa Multiplatform",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 4,
+        title: "Kotlin Untuk Aplikasi Server-Side",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 5,
+        title: "Kotlin Untuk Aplikasi Android",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 6,
+        title: "Kotlin Sebagai Investasi",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 7,
+        title: "Kotlin Sebagai Bahasa Safe, Statically Typed",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Persiapan Membangun dan Menjalankan Program Kotlin",
+    content: [
+      {
+        id: 1,
+        title: "Membangun dan Menjalankan Program Kotlin",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 2,
+        title: "Instalasi OpenJDK (Linux dan macOS)",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 3,
+        title: "Instalasi OpenJDK (Windows)",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 4,
+        title: "Instalasi Gradle (Linux dan macOS)",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 5,
+        title: "Instalasi IntelliJ IDEA",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 6,
+        title: "Program Pertama Kotlin",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 7,
+        title: "Membuat Program Dengan IntelliJ IDEA",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+      {
+        id: 8,
+        title: "Rangkuman",
+        link: "https://www.youtube.com/embed/Oflbho9ZG2U",
+      },
+    ],
+  },
+];
 
 export const tutors = [
   {
@@ -331,68 +331,8 @@ export const tutors = [
     rating: "5.0",
     personality: "I am kind, loving, and have a girlfriend named Ayu Aprilia",
     address: "Live in Denpasar, Sesetan",
-    about: "I have taught over 23,300 English lessons online. I have also taught English as a second language at the Russian-Armenian University and the American University of Armenia.",
-    lessonsList: [
-      {
-        id: 1,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 2,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 3,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 4,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 5,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-      {
-        id: 6,
-        title: "Legal English",
-        price: "Rp120.000",
-        description:
-          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
-        language: "English",
-      },
-    ]
-  },
-  {
-    id: 2,
-    name: "Devta Danarsa",
-    social: "devtadandarsa",
-    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
-    price: "Rp50.0000",
-    rating: "3.0",
-    personality: "I am grumpy, i always hungry and want to have sex everytime",
-    address: "Live in Los Angeles, California",
-    about: "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+    about:
+      "I have taught over 23,300 English lessons online. I have also taught English as a second language at the Russian-Armenian University and the American University of Armenia.",
     lessonList: [
       {
         id: 1,
@@ -442,7 +382,255 @@ export const tutors = [
           "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
         language: "English",
       },
-    ]
+    ],
+  },
+  {
+    id: 2,
+    name: "Devta Danarsa",
+    social: "devtadandarsa",
+    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+    price: "Rp50.0000",
+    rating: "3.0",
+    personality: "I am grumpy, i always hungry and want to have sex everytime",
+    address: "Live in Los Angeles, California",
+    about:
+      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+    lessonList: [
+      {
+        id: 1,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 2,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 3,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 4,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 5,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 6,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Pramana Jagadhita",
+    social: "devtadandarsa",
+    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+    price: "Rp50.0000",
+    rating: "3.0",
+    personality: "I am grumpy, i always hungry and want to have sex everytime",
+    address: "Live in Los Angeles, California",
+    about:
+      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+    lessonList: [
+      {
+        id: 1,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 2,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 3,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 4,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 5,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 6,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Bayu Madura",
+    social: "devtadandarsa",
+    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+    price: "Rp50.0000",
+    rating: "3.0",
+    personality: "I am grumpy, i always hungry and want to have sex everytime",
+    address: "Live in Los Angeles, California",
+    about:
+      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+    lessonList: [
+      {
+        id: 1,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 2,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 3,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 4,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 5,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 6,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Liangga Ristiana",
+    social: "devtadandarsa",
+    desc: "I am lame compare to Tude :( but at least i have girlfriend now",
+    price: "Rp50.0000",
+    rating: "3.0",
+    personality: "I am grumpy, i always hungry and want to have sex everytime",
+    address: "Live in Los Angeles, California",
+    about:
+      "I have conducted more than 120 online lessons in JavaScript instruction. Additionally, I've imparted my knowledge as a programming instructor at the Russian-Armenian University and the American University of Armenia, with a focus on English as a second language.",
+    lessonList: [
+      {
+        id: 1,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 2,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 3,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 4,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 5,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+      {
+        id: 6,
+        title: "Legal English",
+        price: "Rp120.000",
+        description:
+          "We will either use Cambridge's International Legal English, second edition, or I will prepare materials tailored to your interests.  We can work on legal writing (for example, writing a case brief) or speaking (for example, giving an opening statement) or both.",
+        language: "English",
+      },
+    ],
   },
 ];
 
@@ -453,7 +641,8 @@ export const courseList = [
     time: "50",
     rating: "4.84",
     difficulty: "Pemula",
-    description: "Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.",
+    description:
+      "Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.",
     module: "118",
     total: "55.422",
     image: "/images/kotlin-course.jpg",
@@ -464,7 +653,8 @@ export const courseList = [
     time: "30",
     rating: "4.84",
     difficulty: "Pemula",
-    description: "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Python",
+    description:
+      "Pelajari berbagai konsep dasar analisis data beserta tahapannya, dilengkapi pembahasan studi kasus menggunakan bahasa pemrograman Python",
     module: "61",
     total: "20.854",
     image: "/images/analisis-data-course.jpg",
@@ -475,7 +665,8 @@ export const courseList = [
     time: "11",
     rating: "4.87",
     difficulty: "Dasar",
-    description: "Mempelajari dasar manajemen proyek, siklus dan metodologi manajemen, hingga mengejar karir manajemen proyek.",
+    description:
+      "Mempelajari dasar manajemen proyek, siklus dan metodologi manajemen, hingga mengejar karir manajemen proyek.",
     module: "38",
     total: "14.117",
     image: "/images/manajemen-proyek-course.png",
@@ -486,7 +677,8 @@ export const courseList = [
     time: "50",
     rating: "4.84",
     difficulty: "Pemula",
-    description: "Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.",
+    description:
+      "Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.",
     module: "118",
     total: "55.422",
     image: "/images/kotlin-course.jpg",
