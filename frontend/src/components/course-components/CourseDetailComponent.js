@@ -61,20 +61,9 @@ export default function CourseDetailComponent(props) {
             <div className="flex gap-5">
               <img src="/images/kotlin-course.jpg" className="h-[200px] w-[200px] rounded-lg"/>
               <div className="">
-                <h5 className="font-semibold text-[#F59E0B]">
-                  <FontAwesomeIcon icon={faStar} /> {props.rating}
-                </h5>
                 <h1 className="font-bold text-[30px] mb-[10px] font-poppins">
                   {props.title}
                 </h1>
-                <div className="flex items-center">
-                  <h1 className="mr-2">Teknologi : </h1>
-                  {props.tech.map((data) => {
-                    return(
-                      <h2 key={data.id} className="border-2 rounded-md mr-1 px-2 border-[#FB9C46] text-[#FB9C46]">{data.name}</h2>
-                    )
-                  })}
-                </div>
                 <div className="flex items-center mt-[18px]">
                   <div className="flex items-center gap-1 text-[20px]">
                     <FontAwesomeIcon icon={faBars} style={{ color: "#337eff" }}/>

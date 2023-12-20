@@ -36,7 +36,7 @@ export default function LessonDetail(){
             <NavbarComponent page="Lessons"/>
             {courseDetail.map((data) => {
                 return(
-                    <CourseDetailComponent key={data.id} id={data.course_id} title={data.course_title} rating={data.rating} difficulty={data.difficulty} time={data.total_time} description={data.main_description} detailDescription={data.detailed_description} tech={data.tech} total={data.total_student}/>
+                    <CourseDetailComponent key={data.id} id={data.course_id} title={data.course_title} difficulty={data.difficulty} time={data.total_time} description={data.main_description} detailDescription={data.detailed_description} total={data.total_student}/>
                     )
                 })}
             <FooterComponent />

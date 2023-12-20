@@ -3,11 +3,28 @@ import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDis
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function SignInComponent(){
+    const router = useRouter();
+
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const [isVisible, setIsVisible] = React.useState(false);
+    
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    
     const toggleVisibility = () => setIsVisible(!isVisible);
+
+    const handleSignIn = (onClose) => {
+        if(username == "admin" && password == "termosdingin"){
+            router.push("/admin");
+            onClose();
+        }else{
+            onClose();
+        }
+    }
 
     return(
         <>
@@ -18,7 +35,7 @@ export default function SignInComponent(){
                     <>
                         <ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
                         <ModalBody>
-                            <Input autoFocus label="Email" variant="bordered"/>
+                            <Input autoFocus label="Username" variant="bordered" value={username} onChange={(e) => setUsername(e.target.value)}/>
                             <Input label="Password" variant="bordered"
                                 endContent={
                                     <button className="focus:outline-none" type="button" onClick={toggleVisibility}>
@@ -30,6 +47,8 @@ export default function SignInComponent(){
                                     </button>
                                 }
                                 type={isVisible ? "text" : "password"}
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
                             />
                             <div className="flex py-2 px-1 justify-between">
                                 <Checkbox classNames={{ label: "text-small",}}>Remember me</Checkbox>
@@ -40,7 +59,7 @@ export default function SignInComponent(){
                             <Button color="danger" variant="flat" onPress={onClose}>
                             Close
                             </Button>
-                            <Button color="primary" onPress={onClose}>
+                            <Button color="primary" onClick={() => handleSignIn(onClose)}>
                             Sign in
                             </Button>
                         </ModalFooter>

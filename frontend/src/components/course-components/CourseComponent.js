@@ -13,7 +13,7 @@ export function CourseComponent(props) {
 
   return (
     <Link href={`lessons/${props.id}`}>
-      <div className="border-2 rounded-lg w-full xl:w-fit px-5 py-5 hover:scale-105 transition-transform h-[330px]">
+      <div className="border-2 rounded-lg w-full px-5 py-5 hover:scale-105 transition-transform h-[330px]">
         <div className="flex">
           <Image src={props.image} height={150} width={150} alt="course-image" className="hidden md:block"/>
           <div className="ml-4 text-[20px] font-semibold">
@@ -22,10 +22,6 @@ export function CourseComponent(props) {
               <div className="flex items-center mr-5">
                 <FontAwesomeIcon icon={faClock} style={{color: "#00d5ff",}} />
                 <p className="text-[15px] ml-2">{`${props.time} jam`}</p>
-              </div>
-              <div className="flex items-center mr-5">
-                <FontAwesomeIcon icon={faStar} style={{color: "#f9d006",}} />
-                <p className="text-[15px] ml-2">{props.rating}</p>
               </div>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faSignal} style={{color: "#005eff",}} />

@@ -47,17 +47,25 @@ export default function AddCourse(){
     }
 
     return(
-        <div className="mx-24">
-            <h1 className="text-[30px] font-semibold mt-10">Add Course</h1>
-            <div className="mt-6">
-                <FormField label="Course Title" type="text" placeholder="Course Title" name="title" onChange={handleChange}/>
-                <FormField label="Short Description" type="text" placeholder="Short Description" name="shortDescription" onChange={handleChange}/>
-                <FormField label="Detailed Description" type="text" placeholder="Detailed Description" name="detailedDescription" onChange={handleChange}/>
-                <FormField label="Estimated Total Time" type="text" placeholder="Estimated Total Time" name="estimatedTotalTime" onChange={handleChange}/>
-                <FormField label="Difficulty" type="select" placeholder="Difficulty" name="difficulty" onChange={handleChange}>
-                    
-                </FormField>
-                <Button radius="sm" color="success" className="mt-5 px-6 text-white" startContent={<FontAwesomeIcon icon={faFloppyDisk} style={{color: "#ffffff",}}/>} onClick={handleAddCourse}>Submit</Button>
+        <div>
+            <div className="mx-24">
+                <h1 className="text-[30px] font-semibold mt-10">Add Course</h1>
+                <div className="mt-6">
+                    <FormField label="Course Title" type="text" placeholder="Course Title" name="title" onChange={handleChange}/>
+                    <FormField label="Short Description" type="text" placeholder="Short Description" name="shortDescription" onChange={handleChange}/>
+                    <FormField label="Detailed Description" type="text" placeholder="Detailed Description" name="detailedDescription" onChange={handleChange}/>
+                    <FormField label="Estimated Total Time" type="text" placeholder="Estimated Total Time" name="estimatedTotalTime" onChange={handleChange}/>
+                    <FormField label="Difficulty" type="select" placeholder="Difficulty" name="difficulty" onChange={handleChange}>
+                        {["Pemula", "Menengah", "Mahir", "Profesional"].map((option) => {
+                            return(
+                            <option key={option} value={option}>
+                                {option}
+                            </option>
+                            )
+                        })}
+                    </FormField>
+                    <Button radius="sm" color="success" className="mt-5 px-6 text-white" startContent={<FontAwesomeIcon icon={faFloppyDisk} style={{color: "#ffffff",}}/>} onClick={handleAddCourse}>Submit</Button>
+                </div>
             </div>
         </div>
     )
