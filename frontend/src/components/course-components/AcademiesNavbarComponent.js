@@ -12,7 +12,7 @@ export default function AcademiesNavbarComponent(){
             <NavbarContent>
                 <NavbarBrand className="cursor-pointer">
                     <FontAwesomeIcon icon={faArrowLeft} style={{color: "#FB9C46",}} />
-                    <Link className="font-bold text-inherit ml-6 text-[#FB9C46]" href="/lessons/1">Memulai Pemrograman dengan Kotlin</Link>
+                    <Link className="font-bold text-inherit ml-6 text-[#FB9C46]" href="/lessons">Back to Course Page</Link>
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent justify="end" className="font-semibold hidden sm:flex gap-4">

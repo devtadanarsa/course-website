@@ -31,11 +31,13 @@ export default function LessonsPage(){
             <NavbarComponent page="Lessons"/>
             <div className="px-10 md:px-24">
                 <SearchComponent name="Lessons" onSearchInputChange={handleSearchInputChange}/>
-                <div className="grid grid-cols-1 xl:grid-cols-2 mx-8 mt-8 gap-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 mx-8 mt-8 gap-4">
                     {course.map((data) => {
                         if(data.course_title.toLowerCase().includes(searchInput.toLowerCase())){
                             return(
-                                <CourseComponent key={data.id} id={data.course_id} title={data.course_title} time={data.total_time} rating={data.rating} difficulty={data.difficulty} description={data.main_description} module={data.total_module} total={data.total_student} image={"/images/kotlin-course.jpg"}/>
+                                <div key={data.id} className="w-[600px]">
+                                    <CourseComponent id={data.course_id} title={data.course_title} time={data.total_time} difficulty={data.difficulty} description={data.main_description} module={data.total_module} total={data.total_student} image={"/images/kotlin-course.jpg"}/>
+                                </div>
                             )
                         }
                         return null;

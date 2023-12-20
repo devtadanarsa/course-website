@@ -61,9 +61,6 @@ export default function CourseDetailComponent(props) {
             <div className="flex gap-5">
               <img src="/images/kotlin-course.jpg" className="h-[200px] w-[200px] rounded-lg"/>
               <div className="">
-                <h5 className="font-semibold text-[#F59E0B]">
-                  <FontAwesomeIcon icon={faStar} /> {props.rating}
-                </h5>
                 <h1 className="font-bold text-[30px] mb-[10px] font-poppins">
                   {props.title}
                 </h1>

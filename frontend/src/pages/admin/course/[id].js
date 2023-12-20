@@ -134,6 +134,8 @@ export default function EditCourse(){
             setDetailedDescription(e.target.value);
         }else if(name === "estimatedTotalTime"){
             setEstimatedTotalTime(e.target.value);
+        }else if(name === "difficulty"){
+            setDifficulty(e.target.value);
         }
     }
 
@@ -201,10 +203,10 @@ export default function EditCourse(){
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {chapter.content && chapter.content.map((data) => {
+                                            {chapter.content && chapter.content.map((data, index) => {
                                                 return(
                                                     <tr key={data.id}>
-                                                        <td className="text-center border">{data.id}</td>
+                                                        <td className="text-center border">{index + 1}</td>
                                                         <td className="border text-left pl-3">{data.name}</td>
                                                         <td className="border text-left pl-3">{data.link}</td>
                                                         <td className="border text-center py-2">

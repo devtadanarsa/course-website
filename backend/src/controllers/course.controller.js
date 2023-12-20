@@ -2,7 +2,16 @@ const pool = require('../config/database');
 
 // get all course (localhost.8000/lessons)
 const getCourses = (req, res) => {
-    const queries = "SELECT * FROM course";
+    const queries = 
+    `SELECT course.*, COUNT(chapter_content.content_id) AS total_module
+        FROM course
+        LEFT JOIN 
+            course_chapter ON course.course_id = course_chapter.course_id
+        LEFT JOIN 
+            chapter_content ON course_chapter.chapter_id = chapter_content.chapter_id
+        GROUP BY 
+            course.course_id;`
+    // const queries = "SELECT * FROM course";
     pool.query(queries, (error, results) => {
         if(error) throw error;
         res.status(200).json(results.rows);

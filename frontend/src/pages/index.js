@@ -1,3 +1,5 @@
+"use client";
+
 import NavbarComponent from "@/components/NavbarComponent"
 import HeroComponent from "@/components/landing-page/HeroComponent"
 import PurchaseTutorsComponent from "@/components/landing-page/PurchaseTutorsComponent"
