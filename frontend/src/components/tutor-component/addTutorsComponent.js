@@ -18,7 +18,7 @@ export default function AddTutorsComponent() {
   const [language, setLanguage] = useState("");
   const [desc, setDesc] = useState("");
   const [video, setVideo] = useState("");
-  const [imageURL, setImageURL] = useState(null);
+  // const [file, setFile] = useState(null);
 
   // const file = e.target.files[0];
   // const handleFileChange = (e) => {
@@ -53,6 +53,24 @@ export default function AddTutorsComponent() {
       console.error(err.message);
     }
   };
+
+  // const uploadImage = async () => {
+  //   try {
+  //     const formData = new formData();
+  //     formData.append("image", file);
+  //     const response = await fetch("http://localhost:8000/tutors", {
+  //       method: "POST",
+  //       body: formData,
+  //     });
+  //     window.location("/tutors");
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! Status: ${response.status}`);
+  //     }
+  //     if (!response.ok) throw error;
+  //   } catch (err) {
+  //     console.error(err.message);
+  //   }
+  // };
 
   // console.log(imageURL)
 
@@ -125,16 +143,16 @@ export default function AddTutorsComponent() {
                     accept="image/*"
                     label="Upload Image"
                     onChange={(e) => {
-                      setImageURL(URL.createObjectURL(e.target.files[0]));
+                      setFile(e.target.files[0]);
                     }}
-                    // onChange={handleFileChange}
+                    onClick={uploadImage}
                     required
                   /> */}
                 </ModalBody>
                 <ModalFooter>
-                  <button color="primary" onPress={console.log("p")}>
+                  <Button color="primary" onPress={console.log("p")}>
                     Submit
-                  </button>
+                  </Button>
                 </ModalFooter>
               </form>
             </>
