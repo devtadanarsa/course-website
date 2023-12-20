@@ -1,9 +1,12 @@
 import FormField from "@/components/admin-components/FormFieldComponent"
+import AddChapterComponent from "@/components/admin-components/AddChapterComponent";
+import AddContentComponent from "@/components/admin-components/AddContentComponent";
+import EditChapterComponent from "@/components/admin-components/EditChapterComponent";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 import {Button} from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFloppyDisk, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faFloppyDisk, faTrash, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function EditCourse(){
     const router = useRouter();
@@ -11,7 +14,6 @@ export default function EditCourse(){
     const [courseData, setCourseData] = useState(null);
     const [chapterData, setChapterData] = useState(null);
     const [courseId, setCourseId] = useState(null);
-
     const [courseTitle, setCourseTitle] = useState("");
     const [mainDescripton, setMainDescription] = useState("");
     const [detailedDescription, setDetailedDescription] = useState("");
@@ -79,6 +81,48 @@ export default function EditCourse(){
             alert("An error occurred while editing course");
         }
     }
+
+    const handleDeleteChapter = async (chapterId) => {
+        try{
+            const response = await fetch(`http://localhost:8000/lessons/${courseId}/chapter/${chapterId}`,{
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            if(response.ok){
+                alert("Chapter deleted successfully");
+                fetchInfo();
+            }else{
+                const errorMessage = await response.text();
+                alert(`Error : ${errorMessage}`);
+            }
+        }catch(error){
+            console.error(`Error : ${error}`);
+            alert("An error occured while deleting the chapter");
+        }
+    }
+
+    const handleDeleteContent = async (contentId) => {
+        try{
+            const response = await fetch(`http://localhost:8000/lessons/${courseId}/content/${contentId}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            if(response.ok){
+                alert("Content deleted successfully");
+                fetchInfo();
+            }else{
+                const errorMessage = await response.text();
+                alert(`Error : ${errorMessage}`);
+            }
+        }catch(error){
+            console.error(`Error : ${error}`);
+            alert("An error occured while deleting the content");
+        }
+    }
     
     const handleInputChange = (e) => {
         const {name, value} = e.target;
@@ -92,6 +136,7 @@ export default function EditCourse(){
             setEstimatedTotalTime(e.target.value);
         }
     }
+
 
     useEffect(() => {
         fetchInfo();
@@ -126,6 +171,9 @@ export default function EditCourse(){
             </section>
             <section>
                 <h1 className="text-[30px] font-semibold mt-10 mb-6">Course Chapter</h1>
+                <div className="flex justify-end">
+                    <AddChapterComponent courseId={courseId}/>
+                </div>
                 {chapterData && (
                     <>
                         <table className="w-full">
@@ -134,7 +182,16 @@ export default function EditCourse(){
                                     <>
                                         <thead>
                                             <tr>
-                                                <th className="border py-5 text-[20px] text-left pl-4" colSpan="4">Chapter : {chapter.chapter_title}</th>
+                                                <th className="border py-5 text-[20px] text-left px-4" colSpan="4">
+                                                    <div className="flex justify-between">
+                                                        <h1>Chapter : {chapter.chapter_title}</h1>
+                                                        <div className="flex gap-2">
+                                                            <AddContentComponent courseId={courseId} chapterId={chapter.chapter_id}/>
+                                                            <EditChapterComponent defaultValue={chapter.chapter_title} courseId={courseId} chapterId={chapter.chapter_id}/>
+                                                            <Button color="danger" endContent={<FontAwesomeIcon icon={faTrash} />} onClick={() => handleDeleteChapter(chapter.chapter_id)} isIconOnly/>
+                                                        </div>
+                                                    </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th className="border py-2">No</th>
@@ -144,7 +201,7 @@ export default function EditCourse(){
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {chapter.content.map((data) => {
+                                            {chapter.content && chapter.content.map((data) => {
                                                 return(
                                                     <tr key={data.id}>
                                                         <td className="text-center border">{data.id}</td>
@@ -152,7 +209,7 @@ export default function EditCourse(){
                                                         <td className="border text-left pl-3">{data.link}</td>
                                                         <td className="border text-center py-2">
                                                             <div>
-                                                            <Button color="danger" className="text-white" isIconOnly startContent={<FontAwesomeIcon icon={faTrash} style={{color: "#ffffff",}}/>} onClick={() => deleteCourse(data.course_id)}/>
+                                                            <Button color="danger" className="text-white" isIconOnly startContent={<FontAwesomeIcon icon={faTrash} style={{color: "#ffffff",}}/>} onClick={() => handleDeleteContent(data.id)}/>
                                                             </div>
                                                         </td>
                                                     </tr>

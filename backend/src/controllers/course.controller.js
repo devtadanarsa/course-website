@@ -56,6 +56,28 @@ const addCourse = (req, res) => {
     })
 }
 
+const addCourseChapter = (req, res) => {
+    const courseId = parseInt(req.params.id)
+    const {chapterTitle} = req.body;
+    const queries = 'INSERT INTO course_chapter(course_id, chapter_title) VALUES($1, $2)';
+
+    pool.query(queries, [courseId, chapterTitle], (error, results) => {
+        if(error) throw error;
+        res.status(201).send("Chapter successfully added");
+    })
+}
+
+const addChapterContent = (req, res) => {
+    const chapterId = parseInt(req.params.chapterId);
+    const {contentTitle, videoLink} = req.body;
+    const queries = 'INSERT INTO chapter_content(chapter_id, content_title, video_link) VALUES($1, $2, $3)'
+
+    pool.query(queries, [chapterId, contentTitle, videoLink], (error, results) => {
+        if(error) throw error;
+        res.status(201).send("Content sucessfully added");
+    })
+}
+
 // edit course main section (localhost:8000/course/:id)
 const updateCourse = (req, res) => {
     const id = parseInt(req.params.id);
@@ -78,6 +100,17 @@ const updateCourse = (req, res) => {
     */
 }
 
+const updateChapter = (req, res) => {
+    const chapterId = parseInt(req.params.chapterId);
+    const {chapterTitle} = req.body;
+
+    const queries = 'UPDATE course_chapter SET chapter_title=$2 WHERE chapter_id=$1';
+    pool.query(queries, [chapterId, chapterTitle], (error, results) => {
+        if(error) throw error;
+        res.status(201).send("Chapter successfully updated");
+    })
+}
+
 // remove course (localhost:8000/course/:id)
 const removeCourse = (req, res) => {
     const id = parseInt(req.params.id);
@@ -88,11 +121,34 @@ const removeCourse = (req, res) => {
     })
 }
 
+const removeChapter = (req, res) => {
+    const chapterId = parseInt(req.params.chapterId);
+    const queries = `DELETE FROM course_chapter WHERE chapter_id=${chapterId}`;
+    pool.query(queries, (error, results) => {
+        if(error) throw error;
+        res.status(201).send("Chapter successfully deleted!");
+    })
+}
+
+const removeContent = (req, res) => {
+    const contentId = parseInt(req.params.contentId);
+    const queries = `DELETE FROM chapter_content WHERE content_id=${contentId}`;
+    pool.query(queries, (error, results) => {
+        if(error) throw error;
+        res.status(201).send("Content successfully deleted!");
+    })
+}
+
 module.exports = {
     getCourses,
     getCourseById,
     getCourseChapters,
     addCourse,
+    addCourseChapter,
+    addChapterContent,
     updateCourse,
-    removeCourse
+    updateChapter,
+    removeCourse,
+    removeChapter,
+    removeContent
 }
