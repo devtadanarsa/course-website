@@ -7,6 +7,8 @@ const app = express();
 const port = 8000;
 app.use(cors());
 
+// const upload = multer({ dest: "uploads/" });
+
 //store image
 // const storage = multer.memoryStorage();
 // const upload = multer({ storage: storage });
@@ -37,6 +39,21 @@ app.use(express.json());
 app.use("/users", userRoutes);
 app.use("/lessons", courseRoutes);
 app.use("/tutors", tutorRoutes);
+
+//upload image
+// app.post("/tutors/:id", upload.single("image"), async (req, res) => {
+//   try {
+//     const imageData = req.file.buffer;
+//     const { id } = req.params;
+//     const query =
+//       "INSERT INTO tutors(profile_image) VALUES ($1) WHERE tutor_id=$2";
+//     const result = pool.query(query, [imageData]);
+//     const imageId = result.rows[0].id;
+//     res.json({ success: true, imageId });
+//   } catch (err) {
+//     console.error(err.message);
+//   }
+// });
 
 // listen the server
 app.listen(port, () => {
