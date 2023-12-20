@@ -1,4 +1,4 @@
-import { learnLessons, teacherList } from "@/data/constants";
+import { lessonTable, teacherList } from "@/data/constants";
 import { lessonList } from "@/data/constants";
 import { companyList } from "@/data/constants";
 import { moreList } from "@/data/constants";
@@ -23,7 +23,7 @@ export default function FooterComponent() {
         </div>
         <div>
           <h1 className="font-semibold">Lessons</h1>
-          {learnLessons.map((data) => {
+          {lessonTable.map((data) => {
             return (
               <p key={data.id} className="mt-6">
                 {data.title}
@@ -33,7 +33,7 @@ export default function FooterComponent() {
         </div>
         <div>
           <h1 className="font-semibold">Company</h1>
-          {learnLessons.map((data) => {
+          {lessonTable.map((data) => {
             return (
               <p key={data.id} className="mt-6">
                 {data.title}
