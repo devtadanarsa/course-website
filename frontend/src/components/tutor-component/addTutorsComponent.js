@@ -48,7 +48,7 @@ export default function AddTutorsComponent() {
         body: JSON.stringify(body),
       });
       console.log(response);
-      window.location = "/tutors";
+      window.location = "/admin/tutors";
     } catch (err) {
       console.error(err.message);
     }

@@ -5,7 +5,6 @@ import SearchComponent from "@/components/SearchComponent";
 import { useEffect, useState } from "react";
 import TutorComponent from "@/components/tutor-component/TutorComponent";
 import AddTutorsComponent from "@/components/tutor-component/addTutorsComponent";
-import TutorUserComponent from "../../components/tutor-component/TutorUserComponent";
 
 export default function Tutors() {
   const [searchInput, setSearchInput] = useState("");
@@ -46,10 +45,11 @@ export default function Tutors() {
           name="Tutors"
           onSearchInputChange={handleSearchInputChange}
         />
+        <AddTutorsComponent />
         {tutors.map((data) => {
           console.log(data);
           return (
-            <TutorUserComponent
+            <TutorComponent
               key={data.tutor_id}
               name={data.tutor_name}
               degree={data.speciality}

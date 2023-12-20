@@ -38,7 +38,7 @@ export default function UpdateTutorComponent({ tutor }) {
         }
       );
       console.log(response);
-      window.location = "/tutors";
+      window.location = "/admin/tutors";
     } catch (err) {
       console.error(err.message);
     }
