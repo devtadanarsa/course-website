@@ -18,7 +18,6 @@ export default function AddTutorsComponent() {
   const [language, setLanguage] = useState("");
   const [desc, setDesc] = useState("");
   const [video, setVideo] = useState("");
-  const [imageURL, setImageURL] = useState(null);
 
   // const file = e.target.files[0];
   // const handleFileChange = (e) => {
