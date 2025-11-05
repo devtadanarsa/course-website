@@ -14,6 +14,7 @@ describe("AuthController", () => {
     controller = createAuthController(poolMock);
   });
 
+  // ----------------- signIn tests -----------------
   test("signIn success", () => {
     const req = { body: { username: "john", password: "1234" } };
     const fakeUser = { user_id: 1, username: "john" };
@@ -66,5 +67,51 @@ describe("AuthController", () => {
       status: "error",
       message: "Internal Server Error",
     });
+  });
+
+  // ----------------- signUp tests -----------------
+  test("signUp success", () => {
+    const req = {
+      body: {
+        fullName: "John Doe",
+        email: "john@example.com",
+        username: "john",
+        password: "1234",
+      },
+    };
+
+    poolMock.query.mockImplementation((query, values, callback) => {
+      callback(null, { rowCount: 1 });
+    });
+
+    controller.signUp(req, resMock);
+
+    expect(poolMock.query).toHaveBeenCalledWith(
+      expect.stringContaining("INSERT INTO users"),
+      ["John Doe", "john@example.com", "john", "1234"],
+      expect.any(Function)
+    );
+    expect(resMock.status).toHaveBeenCalledWith(201);
+    expect(resMock.json).toHaveBeenCalledWith({
+      status: "success creating user!",
+    });
+  });
+
+  test("signUp database error", () => {
+    const req = {
+      body: {
+        fullName: "John Doe",
+        email: "john@example.com",
+        username: "john",
+        password: "1234",
+      },
+    };
+
+    poolMock.query.mockImplementation((query, values, callback) => {
+      callback(new Error("DB error"), null);
+    });
+
+    // Because signUp throws on error, we need to catch it
+    expect(() => controller.signUp(req, resMock)).toThrow("DB error");
   });
 });

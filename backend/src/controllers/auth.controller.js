@@ -26,7 +26,23 @@ function createAuthController(customPool = pool) {
     });
   };
 
-  return { signIn };
+  const signUp = (req, res) => {
+    const { fullName, email, username, password } = req.body;
+
+    const query = `INSERT INTO users (full_name, email, username, user_password, membership_status)
+      VALUES ($1, $2, $3, $4, 0)`;
+
+    customPool.query(
+      query,
+      [fullName, email, username, password],
+      (error, result) => {
+        if (error) throw error;
+        return res.status(201).json({ status: "success creating user!" });
+      }
+    );
+  };
+
+  return { signIn, signUp };
 }
 
 const defaultController = createAuthController();
