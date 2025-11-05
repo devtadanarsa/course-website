@@ -1,27 +1,53 @@
-const pool = require('../config/database');
+const pool = require("../config/database");
 
-const signIn = (req, res) => {
+function createAuthController(customPool = pool) {
+  const signIn = (req, res) => {
     const { username, password } = req.body;
-    console.log(username);
-    console.log(password);
 
-    const query = `SELECT * FROM users WHERE username='${username}' AND user_password='${password}'`;
+    const query =
+      "SELECT * FROM users WHERE username = $1 AND user_password = $2";
 
-    pool.query(query, (error, results) => {
-        if (error) {
-            return res.status(500).json({ status: 'error', message: 'Internal Server Error' });
-        }
+    customPool.query(query, [username, password], (error, results) => {
+      if (error) {
+        console.error(error);
+        return res
+          .status(500)
+          .json({ status: "error", message: "Internal Server Error" });
+      }
 
-        if (results.rows.length === 0) {
-            return res.status(401).json({ status: 'error', message: 'Invalid credentials' });
-        }
+      if (results.rows.length === 0) {
+        return res
+          .status(401)
+          .json({ status: "error", message: "Invalid credentials" });
+      }
 
-        // Replace this with your actual response logic
-        const user = results.rows[0];
-        res.status(200).json({ status: 'success', user });
+      const user = results.rows[0];
+      return res.status(200).json({ status: "success", user });
     });
+  };
+
+  const signUp = (req, res) => {
+    const { fullName, email, username, password } = req.body;
+
+    const query = `INSERT INTO users (full_name, email, username, user_password, membership_status)
+      VALUES ($1, $2, $3, $4, 0)`;
+
+    customPool.query(
+      query,
+      [fullName, email, username, password],
+      (error, result) => {
+        if (error) throw error;
+        return res.status(201).json({ status: "success creating user!" });
+      }
+    );
+  };
+
+  return { signIn, signUp };
 }
+
+const defaultController = createAuthController();
 
 module.exports = {
-    signIn,
-}
+  ...defaultController,
+  createAuthController,
+};

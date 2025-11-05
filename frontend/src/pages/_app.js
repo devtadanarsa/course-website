@@ -1,8 +1,9 @@
-import '@/styles/globals.css'
-import { NextUIProvider } from '@nextui-org/react'
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import "@/styles/globals.css";
+import { NextUIProvider } from "@nextui-org/react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React from "react";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -11,10 +12,10 @@ export default function App({ Component, pageProps }) {
       offset: 200,
     });
   }, []);
-  
-  return(
+
+  return (
     <NextUIProvider>
       <Component {...pageProps} />
     </NextUIProvider>
-  )
+  );
 }
